@@ -9,7 +9,7 @@ body {
   font-size: 10px
 
 }
-form {
+.form {
   background: #fff;
   padding: 4em 4em 2em;
   max-width: 400px;
@@ -78,7 +78,7 @@ span:after {
   border-width: 8px;
   margin-top: -8px;
 }
-input[type="submit"] {
+#submit{
   background: #2F558E;
   box-shadow: 0 3px 0 0 #1D3C6A;
   border-radius: 5px;
@@ -108,47 +108,66 @@ div
 	<link rel="stylesheet" href="NewUser.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-
-	<form action = "storeinfo()" method="post">
+<div class = "form">
 		<p>
 			<label for="gametype">Type</label>
-			<input id="gametype" name="gametype" type="text">
+			<input id="gametype" class ="gametype" type="text">
 		</p>w
 		<p>
 			<label for="currentplayers">Current Players</label>
-			<input id="currentplayers" name="currentplayers" type="text">
+			<input id="currentplayers" class="currentplayers" type="text">
 			
 		</p>
 		<p>
 			<label for="playersneeded">Players needed</label>
-			<input id="playersneeded" name="playersneeded" type="password">
+			<input id="playersneeded" class="playersneeded" type="text">
 			
 		</p>
 		<p>
 			<label for="loc">Location</label>
-			<input id="loc" name= "loc" type="text">
+			<input id="loc" class= "loc" type="text">
 			
 		</p>
 		<p>
 			<label for="contact">Contact</label>
-			<input id="contact" name="contact" type="text">
+			<input id="contact" class="contact" type="text">
 			
 		</p>
 		
 		<p>
-			<input type="submit" value = "SUBMIT">
+			<button class="storeinfo" onclick = "storevariables()" id="submit">Submit</button>
 		</p>
 	
-	</form>
+		</div>
 
 	<div>
 			PickApp
 
 	</div>
     <script>
-  	function storeinfo()
+
+   // 	 Template.about.gameinfo(
+   //{
+//info: storevariables() {
+  //    return MakeGameInfo.find();
+  //   }
+ //  }
+
+
+  //	Template.about.events({
+// "click .storeinfo":  function(event)
+  //	{
+  		 
+		// MakeGameInfo.insert(gameinfo);
+		// },
+
+	
+  	//}) 
+  	
+
+  	function storevariables()
   	{
-  		 const type = $(".gametype").val();
+  		const type = $(".gametype").val();
   		 const current = $(".currentplayers").val();
   		 const needed = $(".playersneeded").val();
   		 const location = $(".loc").val();
@@ -160,9 +179,9 @@ div
   		 console.log(cont);
   		 const gameinfo = {gametype: type, currentplays: current, need: needed, gameloc: location, contactinfo: cont}
   		 console.dir(gameinfo);
-  		 madegameinfo.insert(gameinfo);
-
+  		  MakeGameInfo.insert(gameinfo);
   	}
+
 
 
     </script>
