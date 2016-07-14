@@ -2,14 +2,57 @@
 
 	<div class="jumbotron">
   	<h1>BaSi</h1>
-		<p>For loving parents who gotta work</p>
-	</div>
+		<p>BaSi - BabySitters</p>
+	</div> 
+		<style> 
+.button {
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-<br>
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 10;
+  right: 0;
+}
+</style>
+<br> 
+
+
+<center><a href="http://localhost/bebasi"><button class="button"><span>Be a Basi</span></button></a></center>
+<center><button class="button"> 
+<span>Find a BaSi</span></button></center>
 <style>
 div.quote {
-    background-color:black;
-    color: white; 
+    background-color:white;
+    color: black; 
 
     margin: 20px 0 20px 0;
     padding: 20px;
