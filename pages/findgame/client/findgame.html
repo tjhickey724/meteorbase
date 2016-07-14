@@ -1,0 +1,19 @@
+<template name="findgame">
+
+
+
+<form>
+<h1> Find Games </h1>
+<div>
+<ul>
+{{#each g in gamelist}}
+<li>{{g.type}}{{g.location}}{{g.current}}{{g.needed}}{{g.cont}}</li>
+{{/each}}
+</ul>
+ </div>
+</form>
+
+
+
+
+</template>
