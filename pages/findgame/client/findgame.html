@@ -7,13 +7,19 @@
 <div>
 <ul>
 {{#each g in gamelist}}
-<li>{{g.type}}{{g.location}}{{g.current}}{{g.needed}}{{g.cont}}</li>
+ {{> showgame g=g}}
 {{/each}}
 </ul>
  </div>
 </form>
 
+</template>
 
 
 
+<template name="showgame">
+<li>{{g.gametype}}<br>{{g.gameloc}}<br>{{g.currentplays}}<br>{{g.need}}<br>{{g.contactinfo}}>
+<button class="js-join">Join</button>
+<hr>
+</li>
 </template>
