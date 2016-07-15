@@ -2,14 +2,24 @@
 
 
 
-<form>
+<form id="find">
 <h1> Find Games </h1>
 <div>
-<ul>
+<table class="table-bordered">
+<thead>
+<tr>
+<th>Game Type</th>
+<th>Game Location</th>
+<th>Current Players</th>
+<th>Players Needed</th>
+<th>Contact Information</th>
+<th>Start Time</th>
+</tr>
+</thead>
 {{#each g in gamelist}}
- {{> showgame g=g}}
+{{> showgame g=g}}
 {{/each}}
-</ul>
+</table>
  </div>
 </form>
 
@@ -18,8 +28,18 @@
 
 
 <template name="showgame">
-<li>{{g.gametype}}<br>{{g.gameloc}}<br>{{g.currentplays}}<br>{{g.need}}<br>{{g.contactinfo}}<br>{g.starttime}}
+<tbody>
+<tr>
+<td>{{g.gametype}}</td>
+<td>{{g.gameloc}}</td>
+<td>{{g.currentplays}}</td>
+<td>{{g.need}}</td>
+<td>{{g.contactinfo}}</td>
+<td>{{g.starttime}}</td>
 <button class="js-join">Join</button>
-<hr>
-</li>
+</tr>
+</tbody>
+
+
 </template>
+
