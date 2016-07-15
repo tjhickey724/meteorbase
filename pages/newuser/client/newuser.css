@@ -7,7 +7,7 @@ body {
   font-size: 10px
 
 }
-form#user{
+form#new{
   background: #fff;
   padding: 4em 4em 2em;
   max-width: 400px;
@@ -15,6 +15,7 @@ form#user{
   box-shadow: 0 0 1em #222;
   border-radius: 5px;
   margin-top: 50px;
+
 }
 p {
   margin: 0 0 3em 0;
@@ -35,7 +36,9 @@ input {
 input[type= "checkbox"]
 {
 
-  margin-left: -190px;
+position:relative;
+  left: 253px;
+  top:-15px;
 }
 input[type="text"],
 input[type="password"] {
