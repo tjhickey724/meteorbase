@@ -37,7 +37,7 @@ input[type= "checkbox"]
 {
 
 position:relative;
-  left: 253px;
+  left: 269px;
   top:-15px;
 }
 input[type="text"],
@@ -101,3 +101,14 @@ div
 
 
 }
+
+
+
+#agreement{
+
+position: relative;
+left: 10px;
+
+
+}
+
