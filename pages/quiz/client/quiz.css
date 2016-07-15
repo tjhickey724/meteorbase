@@ -1,0 +1,19 @@
+.col-sm-12 {
+  border-width: 3px;
+  border-style: double;
+  border-color: black;
+  padding: 20px;
+}
+
+/*
+.js-lifestyle {
+  text-align: center;
+  font-size: 24px;
+}
+*/
+
+.js-chose-nightOwl:active, .active {
+    background-color:blue;
+    color: white;
+
+}
