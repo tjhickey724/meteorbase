@@ -18,14 +18,14 @@
 
       <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail"> 
-          <input type="radio" class="js-gender" value="male" name="gender"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mars_symbol.svg/2000px-Mars_symbol.svg.png" style="width:400px;height:300px;">
+          <input type="radio" id="js-gender" value="male" name="gender" onclick="saveGender(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mars_symbol.svg/2000px-Mars_symbol.svg.png" style="width:400px;height:300px;">
           <h3> Male </h3>
         </div>
       </div>
 
       <div class="col-sm-5"> 
         <div class="thumbnail">
-          <input type="radio" class="js-gender" value="female" name="gender"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Venus_symbol.svg/2000px-Venus_symbol.svg.png" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-gender" value="female" name="gender" onclick="saveGender(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Venus_symbol.svg/2000px-Venus_symbol.svg.png" style="width:400px;height:300px;"> 
           <h3> Female </h3>
         </div>
       </div>
@@ -34,12 +34,12 @@
 
       <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-  	      <input type="radio" class="js-gender" value="other" name="gender"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Japanese_Map_symbol_(Other_Tree_plantation).svg/250px-Japanese_Map_symbol_(Other_Tree_plantation).svg.png" style="width:400px;height:300px;"> 
+  	      <input type="radio" id="js-gender" value="other" name="gender" onclick="saveGender(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Japanese_Map_symbol_(Other_Tree_plantation).svg/250px-Japanese_Map_symbol_(Other_Tree_plantation).svg.png" style="width:400px;height:300px;"> 
  		      <h3> Other </h3>
         </div>
 
        <h5> If other, please specify </h5>
-          <input type="text" class="js-gender">
+          <input type="text" class="js-otherGender">
       </div>
   </div>
 
@@ -53,14 +53,14 @@
       
       <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-lifestyle" value="night owl" name="lifestyle"> <img src="https://i.ytimg.com/vi/d49YXkMk6UY/hqdefault.jpg" alt="nightOwl" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-lifestyle" value="night owl" name="lifestyle" onclick="saveLifestyle(this.value)"> <img src="https://i.ytimg.com/vi/d49YXkMk6UY/hqdefault.jpg" alt="nightOwl" style="width:400px;height:300px;"> 
           <h3> Night Owl </h3>
         </div>
       </div> 
 
     <div class="col-sm-5"> 
       <div class="thumbnail">
-        <input type="radio" class="js-lifestyle" value="early bird" name="lifestyle"> <img src="https://static.pexels.com/photos/6616/sunset-bird-sunrise-animal.jpg" alt="earlyBird" style="width:400px;height:300px;">
+        <input type="radio" id="js-lifestyle" value="early bird" name="lifestyle" onclick="saveLifestyle(this.value)"> <img src="https://static.pexels.com/photos/6616/sunset-bird-sunrise-animal.jpg" alt="earlyBird" style="width:400px;height:300px;">
       	<h3> Early Bird </h3>
       </div>
     </div> 
@@ -76,14 +76,14 @@
 
       <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-ocd" value="very messy" name="ocd"> <img src="http://www.greenberg-art.com/.Illustrations/.Humorous/qq1sgMessyDesk.jpg" alt="veryMessy" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-ocd" value="very messy" name="ocd" onclick="saveOCD(this.value)"> <img src="http://www.greenberg-art.com/.Illustrations/.Humorous/qq1sgMessyDesk.jpg" alt="veryMessy" style="width:400px;height:300px;"> 
           <h3> Very Messy </h3>
         </div>
       </div> 
 
       <div class="col-sm-5"> 
         <div class="thumbnail">
-          <input type="radio" class="js-ocd" value="kinda sorta messy" name="ocd">  <img src="http://sunflowerparents.com/wp-content/uploads/2013/04/bigstock-little-schoolgirl-in-a-messy-r-24415496-390x250.jpg" alt="kindaMessy" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-ocd" value="kinda sorta messy" name="ocd" onclick="saveOCD(this.value)">  <img src="http://sunflowerparents.com/wp-content/uploads/2013/04/bigstock-little-schoolgirl-in-a-messy-r-24415496-390x250.jpg" alt="kindaMessy" style="width:400px;height:300px;"> 
           <h3> Kinda Sorta Messy </h3>
         </div>
       </div> 
@@ -92,14 +92,14 @@
 
       <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-ocd" value="depends on my mood" name="ocd"> <img src="https://neuropharmlabs.com/wp-content/uploads/2015/01/neuropharm-organized.jpg" alt="depends" style="width:400px;height:300px;">
+          <input type="radio" id="js-ocd" value="depends on my mood" name="ocd" onclick="saveOCD(this.value)"> <img src="https://neuropharmlabs.com/wp-content/uploads/2015/01/neuropharm-organized.jpg" alt="depends" style="width:400px;height:300px;">
           <h3> Depends on my mood </h3>
         </div>
       </div> 
 
       <div class="col-sm-5"> 
         <div class="thumbnail">
-          <input type="radio" class="js-ocd" value="pretty clean" name="ocd"> <img src="http://hbu.h-cdn.co/assets/cm/15/04/980x653/54bf45c7cd04a_-_hbx-gray-purple-bedroom-0913-s2.jpg" alt="prettyClean" style="width:400px;height:300px;">
+          <input type="radio" id="js-ocd" value="pretty clean" name="ocd" onclick="saveOCD(this.value)"> <img src="http://hbu.h-cdn.co/assets/cm/15/04/980x653/54bf45c7cd04a_-_hbx-gray-purple-bedroom-0913-s2.jpg" alt="prettyClean" style="width:400px;height:300px;">
           <h3> Pretty Clean </h3>
         </div>
       </div> 
@@ -108,7 +108,7 @@
 
       <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-ocd" value="neat freak" name="ocd"> <img src="http://homeplanner.in/wp-content/uploads/2016/06/exciting-empty-room-goruntule-empty-rooms-and-empty-rooms-and-empty-rooms-background-by.jpg" alt="Clean" style="width:400px;height:300px;">
+          <input type="radio" id="js-ocd" value="neat freak" name="ocd" onclick="saveOCD(this.value)"> <img src="http://homeplanner.in/wp-content/uploads/2016/06/exciting-empty-room-goruntule-empty-rooms-and-empty-rooms-and-empty-rooms-background-by.jpg" alt="Clean" style="width:400px;height:300px;">
           <h3> Neat Freak </h3>
         </div>
       </div> 
@@ -124,14 +124,14 @@
 
     <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="classical" name="music"> <img src="http://mediad.publicbroadcasting.net/p/kunr/files/201408/Classical-Music-Wallpaper.jpg" alt="classical" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-music" value="classical" name="music" onclick="saveMusic(this.value)"> <img src="http://mediad.publicbroadcasting.net/p/kunr/files/201408/Classical-Music-Wallpaper.jpg" alt="classical" style="width:400px;height:300px;"> 
           <h3> Classical </h3>
         </div>
     </div> 
     
     <div class="col-sm-5"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="pop" name="music"> <img src="http://az616578.vo.msecnd.net/files/2016/03/29/635948710372555057-1236329505_019.jpg" alt="pop" style="width:400px;height:300px;">
+          <input type="radio" id="js-music" value="pop" name="music" onclick="saveMusic(this.value)"> <img src="http://az616578.vo.msecnd.net/files/2016/03/29/635948710372555057-1236329505_019.jpg" alt="pop" style="width:400px;height:300px;">
           <h3> Pop </h3>
         </div>
     </div> 
@@ -140,14 +140,14 @@
 
     <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="country" name="music"> <img src="http://az616578.vo.msecnd.net/files/2016/04/30/6359763556019586511937771127_Country-Music.jpg" alt="country" style="width:400px;height:300px;">
+          <input type="radio" id="js-music" value="country" name="music" onclick="saveMusic(this.value)"> <img src="http://az616578.vo.msecnd.net/files/2016/04/30/6359763556019586511937771127_Country-Music.jpg" alt="country" style="width:400px;height:300px;">
           <h3> Country </h3>
         </div>
     </div>
 
     <div class="col-sm-5"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="rock" name="music"><img src="http://cdn-media-2.lifehack.org/wp-content/files/2015/09/rock-music-wallpapers.jpg" alt="rock" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-music" value="rock" name="music" onclick="saveMusic(this.value)"><img src="http://cdn-media-2.lifehack.org/wp-content/files/2015/09/rock-music-wallpapers.jpg" alt="rock" style="width:400px;height:300px;"> 
           <h3> Rock </h3>
         </div>
     </div>
@@ -156,14 +156,14 @@
 
      <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="RnB" name="music"> <img src="http://www.musicfeelin.com/wp-content/uploads/2016/04/sophia_somajo.7z9fz18ztcsgk480gcc00ckws.f08dzjqsf5wg4sk0sw8w88ocg.th_.jpeg" alt="RnB" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-music" value="RnB" name="music" onclick="saveMusic(this.value)"> <img src="http://www.musicfeelin.com/wp-content/uploads/2016/04/sophia_somajo.7z9fz18ztcsgk480gcc00ckws.f08dzjqsf5wg4sk0sw8w88ocg.th_.jpeg" alt="RnB" style="width:400px;height:300px;"> 
           <h3> RnB </h3>
         </div>
     </div>
 
      <div class="col-sm-5"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="EDM" name="music"> <img src="http://streamkat.com/wp-content/uploads/2013/11/edmstagessmall.jpg" alt="EDM" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-music" value="EDM" name="music" onclick="saveMusic(this.value)"> <img src="http://streamkat.com/wp-content/uploads/2013/11/edmstagessmall.jpg" alt="EDM" style="width:400px;height:300px;"> 
           <h3> EDM </h3>
         </div>
     </div>
@@ -172,14 +172,14 @@
 
      <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="rap" name="music"> <img src="https://pbs.twimg.com/profile_images/709035143537803264/WLV-nsL-.jpg" alt="rap" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-music" value="rap" name="music" onclick="saveMusic(this.value)"> <img src="https://pbs.twimg.com/profile_images/709035143537803264/WLV-nsL-.jpg" alt="rap" style="width:400px;height:300px;"> 
           <h3> Rap </h3>
         </div>
     </div>
 
      <div class="col-sm-5"> 
         <div class="thumbnail"> 
-          <input type="radio" class="js-music" value="alternative" name="music"> <img src="http://top10songs.net/wp-content/uploads/2015/12/Beatles-To-Join-Popular-Streaming-Services.jpg" alt="alternative" style="width:400px;height:300px;">
+          <input type="radio" id="js-music" value="alternative" name="music" onclick="saveMusic(this.value)"> <img src="http://top10songs.net/wp-content/uploads/2015/12/Beatles-To-Join-Popular-Streaming-Services.jpg" alt="alternative" style="width:400px;height:300px;">
           <h3> Alternative </h3>
         </div>
     </div>
@@ -188,7 +188,7 @@
 
     <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-music" value="foreign" name="music"> <img src="https://pbs.twimg.com/profile_images/378800000636337121/47ab5610c6b92baa4a19ef473e3af7a4.jpeg" alt="foreign" style="width:400px;height:300px;">
+          <input type="radio" id="js-music" value="foreign" name="music" onclick="saveMusic(this.value)"> <img src="https://pbs.twimg.com/profile_images/378800000636337121/47ab5610c6b92baa4a19ef473e3af7a4.jpeg" alt="foreign" style="width:400px;height:300px;">
           <h3> Foreign </h3>
         </div>
     </div>
@@ -202,14 +202,14 @@
 
     <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
-          <input type="radio" class="js-subFree" value="yes" name="substanceFree"> <img src="http://pilladvised.com/wp-content/uploads/2010/05/soda_can1.jpg" alt="yes" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-subFree" value="yes" name="substanceFree" onclick="saveSub(this.value)"> <img src="http://pilladvised.com/wp-content/uploads/2010/05/soda_can1.jpg" alt="yes" style="width:400px;height:300px;"> 
           <h3> Yes </h3>
         </div>
     </div>
 
     <div class="col-sm-5"> 
         <div class="thumbnail">
-          <input type="radio" class="js-subFree" value="no" name="substanceFree"> <img src="http://daliairport.com/wp-content/uploads/2016/02/substance-abuse.png" alt="no" style="width:400px;height:300px;"> 
+          <input type="radio" id="js-subFree" value="no" name="substanceFree" onclick="saveSub(this.value)"> <img src="http://daliairport.com/wp-content/uploads/2016/02/substance-abuse.png" alt="no" style="width:400px;height:300px;"> 
           <h3> No </h3>
         </div>
     </div>
@@ -234,14 +234,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-sleepTime" value="Goner as soon as I hit the bed" name="sleepTime"> <img src="http://www.publicdomainpictures.net/pictures/150000/velka/sleeping-lion-14548626755fE.jpg" alt="goner" style="width:400px;height:300px;"> 
+        <input type="radio" id="js-sleepTime" value="Goner as soon as I hit the bed" name="sleepTime" onclick="saveTime(this.value)"> <img src="http://www.publicdomainpictures.net/pictures/150000/velka/sleeping-lion-14548626755fE.jpg" alt="goner" style="width:400px;height:300px;"> 
         <h3> Goner as soon as I hit the bed </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-sleepTime" value="Will not respond soon after light out" name="sleepTime"><img src="https://i.ytimg.com/vi/lDww9DcwECM/maxresdefault.jpg" alt="noResponse" style="width:400px;height:300px;"> 
+        <input type="radio" id="js-sleepTime" value="Will not respond soon after light out" name="sleepTime" onclick="saveTime(this.value)"><img src="https://i.ytimg.com/vi/lDww9DcwECM/maxresdefault.jpg" alt="noResponse" style="width:400px;height:300px;"> 
         <h3> Will not respond soon after light out </h3>
       </div>
     </div>
@@ -250,14 +250,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-sleepTime" value="Will resopnd for a while" name="sleepTime"><img src="https://c1.staticflickr.com/3/2866/11021547683_5186ffa0b1_b.jpg" alt="willRespond" style="width:400px;height:300px;"> 
+        <input type="radio" id="js-sleepTime" value="Will resopnd for a while" name="sleepTime" onclick="saveTime(this.value)"><img src="https://c1.staticflickr.com/3/2866/11021547683_5186ffa0b1_b.jpg" alt="willRespond" style="width:400px;height:300px;"> 
         <h3> Will resopnd for a while </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-sleepTime" value="Can have a good conversation before falling asleep" name="sleepTime"><img src="https://pixabay.com/static/uploads/photo/2015/05/20/09/36/laughter-775062_960_720.jpg" alt="conversationBeforeSleep" style="width:400px;height:300px;"> 
+        <input type="radio" id="js-sleepTime" value="Can have a good conversation before falling asleep" name="sleepTime" onclick="saveTime(this.value)"><img src="https://pixabay.com/static/uploads/photo/2015/05/20/09/36/laughter-775062_960_720.jpg" alt="conversationBeforeSleep" style="width:400px;height:300px;"> 
         <h3> Can have a good conversation before falling asleep </h3>
       </div>
     </div>
@@ -266,7 +266,7 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-sleepTime" value="What is sleep?" name="sleepTime"><img src=" https://i.ytimg.com/vi/f5rSs3KCs3o/hqdefault.jpg" alt="noSleep" style="width:400px;height:300px;"> 
+        <input type="radio" id="js-sleepTime" value="What is sleep?" name="sleepTime" onclick="saveTime(this.value)"><img src=" https://i.ytimg.com/vi/f5rSs3KCs3o/hqdefault.jpg" alt="noSleep" style="width:400px;height:300px;"> 
         <h3> What is sleep? </h3>
       </div>
     </div>
@@ -281,14 +281,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-         <input type="radio" class="js-personality" value="introvert" name="personality"><img src="https://c2.staticflickr.com/6/5501/11608318283_a5487e9d93.jpg" alt="introvert" style="width:400px;height:300px;"> 
+         <input type="radio" id="js-personality" value="introvert" name="personality" onclick="savePersonality(this.value)"><img src="https://c2.staticflickr.com/6/5501/11608318283_a5487e9d93.jpg" alt="introvert" style="width:400px;height:300px;"> 
         <h3> Introvert </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-         <input type="radio" class="js-personality" value="extrovert" name="personality"><img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/The_Adicts_2011_SO36_03.jpg" alt="extrovert" style="width:400px;height:300px;"> 
+         <input type="radio" id="js-personality" value="extrovert" name="personality" onclick="savePersonality(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/The_Adicts_2011_SO36_03.jpg" alt="extrovert" style="width:400px;height:300px;"> 
         <h3> Extrovert </h3>
       </div>
     </div>
@@ -303,7 +303,7 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-         <input type="radio" class="js-pet" value="yes" name="pets"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Holland_lop.JPG" alt="yes" style="width:400px;height:300px;"> 
+         <input type="radio" id="js-pet" value="yes" name="pets" onclick="savePets(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Holland_lop.JPG" alt="yes" style="width:400px;height:300px;"> 
         <h3> Yes </h3>
 
         <h5> If yes, please specify </h5>
@@ -313,7 +313,7 @@
 
     <div class="col-sm-5">
       <div class="thumbnail">
-         <input type="radio" class="js-pet" value="no" name="pets"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/No_pet.svg/2000px-No_pet.svg.png" style="width:400px;height:300px;"> 
+         <input type="radio" id="js-pet" value="no" name="pets" onclick="savePets(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/No_pet.svg/2000px-No_pet.svg.png" style="width:400px;height:300px;"> 
         <h3> No </h3>
       </div>
       
@@ -329,14 +329,14 @@
 
       <div class="col-sm-5 col-sm-offset-1">
         <div class="thumbnail">
-          <input type="radio" class="js-animal" value= "cat" name="animals"> <img src="https://pixabay.com/static/uploads/photo/2014/03/29/09/17/cat-300572_960_720.jpg" alt="cat" style="width:400px;height:300px;">
+          <input type="radio" id="js-animal" value= "cat" name="animals" onclick="saveAnimals(this.value)"> <img src="https://pixabay.com/static/uploads/photo/2014/03/29/09/17/cat-300572_960_720.jpg" alt="cat" style="width:400px;height:300px;">
           <h3> Cat Person </h3>
         </div>
       </div>
 
       <div class="col-sm-5">
         <div class="thumbnail">
-          <input type="radio" class="js-animal" value= "dog" name="animals"> <img src=" https://pixabay.com/static/uploads/photo/2016/02/19/15/46/dog-1210559_960_720.jpg" alt="dog" style="width:400px;height:300px;">
+          <input type="radio" id="js-animal" value= "dog" name="animals" onclick="saveAnimals(this.value)"> <img src=" https://pixabay.com/static/uploads/photo/2016/02/19/15/46/dog-1210559_960_720.jpg" alt="dog" style="width:400px;height:300px;">
           <h3> Dog Person </h3>
         </div>
       </div>
@@ -345,14 +345,14 @@
 
       <div class="col-sm-5 col-sm-offset-1">
         <div class="thumbnail">
-          <input type="radio" class="js-animal" value= "fish" name="animals"> <img src="https://pixabay.com/static/uploads/photo/2016/02/03/15/00/fish-1177215_960_720.png" alt="fish" style="width:400px;height:300px;">
+          <input type="radio" id="js-animal" value= "fish" name="animals" onclick="saveAnimals(this.value)"> <img src="https://pixabay.com/static/uploads/photo/2016/02/03/15/00/fish-1177215_960_720.png" alt="fish" style="width:400px;height:300px;">
           <h3> Fish Person </h3>
         </div>
       </div>
 
       <div class="col-sm-5">
         <div class="thumbnail">
-          <input type="radio" class="js-animal" value= "Lizard/Frog/Snake" name="animals"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/State_reptile_collage_cropped.jpg" alt="Lizard/Frog/Snake" style="width:400px;height:300px;">
+          <input type="radio" id="js-animal" value= "Lizard/Frog/Snake" name="animals" onclick="saveAnimals(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/State_reptile_collage_cropped.jpg" alt="Lizard/Frog/Snake" style="width:400px;height:300px;">
           <h3> Lizard/Frog/Snake Person </h3>
         </div>
       </div>
@@ -361,14 +361,14 @@
 
       <div class="col-sm-5 col-sm-offset-1">
         <div class="thumbnail">
-          <input type="radio" class="js-animal" value= "Bird" name="animals"> <img src="https://pixabay.com/static/uploads/photo/2015/10/03/20/42/bird-970327_960_720.jpg" alt="bird" style="width:400px;height:300px;">
+          <input type="radio" id="js-animal" value= "Bird" name="animals" onclick="saveAnimals(this.value)"> <img src="https://pixabay.com/static/uploads/photo/2015/10/03/20/42/bird-970327_960_720.jpg" alt="bird" style="width:400px;height:300px;">
           <h3> Bird Person </h3>
         </div>
       </div>
 
       <div class="col-sm-5">
         <div class="thumbnail">
-          <input type="radio" class="js-animal" value= "person" name="animals"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Human_outline.svg/2000px-Human_outline.svg.png" alt="person" style="width:400px;height:300px;">
+          <input type="radio" id="js-animal" value= "person" name="animals" onclick="saveAnimals(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Human_outline.svg/2000px-Human_outline.svg.png" alt="person" style="width:400px;height:300px;">
           <h3> Person Person </h3>
         </div>
       </div>
@@ -379,7 +379,7 @@
 
   <div class="col-sm-12">
     <h3> #12 Favorite Color? </h3>
-      <input type="text" class="js-color" placeholder="RAINBOW"> 
+      <input type="text" class="js-favColor" placeholder="RAINBOW"> 
   </div>
 
   <br>
@@ -392,14 +392,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-hobby" value= "videogame" name="hobby"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/P_videogame_controller.svg/400px-P_videogame_controller.svg.png" alt="videogame" style="width:400px;height:300px;">
+        <input type="radio" id="js-hobby" value= "videogame" name="hobby" onclick="saveHobby(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/P_videogame_controller.svg/400px-P_videogame_controller.svg.png" alt="videogame" style="width:400px;height:300px;">
         <h3> Videogame </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-hobby" value= "sports" name="hobby"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/2000px-Sport_balls.svg.png" alt="sports" style="width:400px;height:300px;">
+        <input type="radio" id="js-hobby" value= "sports" name="hobby" onclick="saveHobby(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/2000px-Sport_balls.svg.png" alt="sports" style="width:400px;height:300px;">
         <h3> Sports </h3>
       </div>
     </div>
@@ -408,14 +408,14 @@
 
      <div class="col-sm-5 col-sm-offset-1">
        <div class="thumbnail">
-         <input type="radio" class="js-hobby" value= "read books" name="hobby"> <img src=" http://res.freestockphotos.biz/pictures/14/14324-illustration-of-a-book-pv.png" alt="books" style="width:400px;height:300px;">
+         <input type="radio" id="js-hobby" value= "read books" name="hobby" onclick="saveHobby(this.value)"> <img src=" http://res.freestockphotos.biz/pictures/14/14324-illustration-of-a-book-pv.png" alt="books" style="width:400px;height:300px;">
          <h3> Read Books </h3>
        </div>
     </div>
 
      <div class="col-sm-5">
        <div class="thumbnail">
-         <input type="radio" class="js-hobby" value= "nap" name="hobby"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Hammock_nap_on_patio.jpg" alt="nap" style="width:400px;height:300px;">
+         <input type="radio" id="js-hobby" value= "nap" name="hobby" onclick="saveHobby(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Hammock_nap_on_patio.jpg" alt="nap" style="width:400px;height:300px;">
          <h3> Nap </h3>
        </div>
     </div>
@@ -430,14 +430,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-movie" value= "action" name="movie"> <img src="https://i.ytimg.com/vi/PRIciZZgoR8/maxresdefault.jpg" alt="action" style="width:400px;height:300px;">
+        <input type="radio" id="js-movie" value= "action" name="movie" onclick="saveMovie(this.value)"> <img src="https://i.ytimg.com/vi/PRIciZZgoR8/maxresdefault.jpg" alt="action" style="width:400px;height:300px;">
         <h3> Action </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-movie" value= "thriller" name="movie"> <img src="http://www.eurekastreet.com.au/uploads/image/14/39005.jpg" alt="thriller" style="width:400px;height:300px;">
+        <input type="radio" id="js-movie" value= "thriller" name="movie" onclick="saveMovie(this.value)"> <img src="http://www.eurekastreet.com.au/uploads/image/14/39005.jpg" alt="thriller" style="width:400px;height:300px;">
         <h3> Thriller </h3>
       </div>
     </div>
@@ -446,14 +446,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-movie" value= "comedy" name="movie"> <img src="https://pixabay.com/static/uploads/photo/2013/07/13/10/12/comedy-156776_960_720.png" alt="comedy" style="width:400px;height:300px;">
+        <input type="radio" id="js-movie" value= "comedy" name="movie" onclick="saveMovie(this.value)"> <img src="https://pixabay.com/static/uploads/photo/2013/07/13/10/12/comedy-156776_960_720.png" alt="comedy" style="width:400px;height:300px;">
         <h3> Comedy </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-movie" value= "fantasy" name="movie"> <img src="https://pixabay.com/static/uploads/photo/2015/10/10/22/21/fantasy-981532_960_720.jpg" alt="fantasy" style="width:400px;height:300px;">
+        <input type="radio" id="js-movie" value= "fantasy" name="movie" onclick="saveMovie(this.value)"> <img src="https://pixabay.com/static/uploads/photo/2015/10/10/22/21/fantasy-981532_960_720.jpg" alt="fantasy" style="width:400px;height:300px;">
         <h3> Fantasy </h3>
       </div>
     </div>
@@ -462,14 +462,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-movie" value= "horror" name="movie"> <img src="https://pixabay.com/static/uploads/photo/2015/10/12/15/05/hand-984170_960_720.jpg" alt="horror" style="width:400px;height:300px;">
+        <input type="radio" id="js-movie" value= "horror" name="movie" onclick="saveMovie(this.value)"> <img src="https://pixabay.com/static/uploads/photo/2015/10/12/15/05/hand-984170_960_720.jpg" alt="horror" style="width:400px;height:300px;">
         <h3> Horror </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-movie" value= "romance" name="movie"> <img src="http://az616578.vo.msecnd.net/files/2016/06/12/636013636639999812-1788229101_romancenovelcur.jpg" alt="romance" style="width:400px;height:300px;">
+        <input type="radio" id="js-movie" value= "romance" name="movie" onclick="saveMovie(this.value)"> <img src="http://az616578.vo.msecnd.net/files/2016/06/12/636013636639999812-1788229101_romancenovelcur.jpg" alt="romance" style="width:400px;height:300px;">
         <h3> Romance </h3>
       </div>
     </div>
@@ -484,14 +484,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-cook" value= "yes" name="cook"> <img src="http://all4desktop.com/data_images/original/4245978-cook.jpg" alt="yes" style="width:400px;height:300px;">
+        <input type="radio" id="js-cook" value= "yes" name="cook" onclick="saveCook(this.value)"> <img src="http://all4desktop.com/data_images/original/4245978-cook.jpg" alt="yes" style="width:400px;height:300px;">
         <h3> Yes </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-cook" value= "no" name="cook"> <img src="https://katesapartmentsteading.files.wordpress.com/2013/01/micro.jpg" alt="no" style="width:400px;height:300px;">
+        <input type="radio" id="js-cook" value= "no" name="cook" onclick="saveCook(this.value)"> <img src="https://katesapartmentsteading.files.wordpress.com/2013/01/micro.jpg" alt="no" style="width:400px;height:300px;">
         <h3> No </h3>
       </div>
     </div>
@@ -505,14 +505,14 @@
     <br> 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-sexLife" value= "all the time at home" name="sexLife"> <img src="https://image.freepik.com/free-vector/declaration-of-love_23-2147517078.jpg" alt="all times at home" style="width:400px;height:300px;">
+        <input type="radio" id="js-sexLife" value= "all the time at home" name="sexLife" onclick="saveSexLife(this.value)"> <img src="https://image.freepik.com/free-vector/declaration-of-love_23-2147517078.jpg" alt="all times at home" style="width:400px;height:300px;">
         <h3> ALL THE TIME at home </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-sexLife" value= "often at home" name="sexLife"><img src="http://s.hswstatic.com/gif/consider-before-buying-home-hp-orig.jpg" alt="often" style="width:400px;height:300px;"> 
+        <input type="radio" id="js-sexLife" value= "often at home" name="sexLife" onclick="saveSexLife(this.value)"><img src="http://s.hswstatic.com/gif/consider-before-buying-home-hp-orig.jpg" alt="often" style="width:400px;height:300px;"> 
         <h3> Often at home </h3>
       </div>
     </div>
@@ -521,14 +521,14 @@
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
-        <input type="radio" class="js-sexLife" value= "not at home" name="sexLife"><img src=" https://xieyo1301.files.wordpress.com/2013/09/hotel.jpg" alt="notAtHome" style="width:400px;height:300px;">
+        <input type="radio" id="js-sexLife" value= "not at home" name="sexLife" onclick="saveSexLife(this.value)"><img src=" https://xieyo1301.files.wordpress.com/2013/09/hotel.jpg" alt="notAtHome" style="width:400px;height:300px;">
         <h3> Just not at home </h3>
       </div>
     </div>
 
     <div class="col-sm-5">
       <div class="thumbnail">
-        <input type="radio" class="js-sexLife" value= "forever alone" name="sexLife"><img src="http://blogs-images.forbes.com/allbusiness/files/2014/12/Fotolia_74087814_Subscription_Monthly_M.jpg" alt="alone" style="width:400px;height:300px;"> 
+        <input type="radio" id="js-sexLife" value= "forever alone" name="sexLife" onclick="saveSexLife(this.value)"><img src="http://blogs-images.forbes.com/allbusiness/files/2014/12/Fotolia_74087814_Subscription_Monthly_M.jpg" alt="alone" style="width:400px;height:300px;"> 
         <h3> FOREVER ALONE </h3>
       </div>
     </div>
@@ -537,7 +537,6 @@
 
   <br>
   <br>
-  
 
 
   <button class="btn btn-lg btn-info js-submit-quiz"> Submit </button>
@@ -545,4 +544,59 @@
 
 </div>
 
+<script>
+  function saveGender(gender) {
+    document.getElementById("js-gender").value = gender;
+  }
+
+  function saveLifestyle(lifestyle) {
+    document.getElementById("js-lifestyle").value = lifestyle;
+  }
+
+  function saveOCD(ocd) {
+    document.getElementById("js-ocd").value = ocd;
+  }
+
+  function saveMusic(music) {
+    document.getElementById("js-music").value = music;
+  }
+
+  function saveSub(substanceFree) {
+    document.getElementById("js-subFree").value = substanceFree;
+  }
+
+  function saveTime(sleepTime) {
+    document.getElementById("js-sleepTime").value = sleepTime;
+  }
+
+  function savePersonality(personality) {
+    document.getElementById("js-personality").value = personality;
+  }
+
+  function savePets(pets) {
+    document.getElementById("js-pet").value = pets;
+  }
+
+  function saveAnimals(animals) {
+    document.getElementById("js-animal").value = animals;
+  }
+
+  function saveHobby(hobby) {
+    document.getElementById("js-hobby").value = hobby;
+  }
+
+  function saveMovie(movie) {
+    document.getElementById("js-movie").value = movie;
+  }
+
+  function saveCook(cook) {
+    document.getElementById("js-cook").value = cook;
+  }
+
+  function saveSexLife(sexLife) {
+    document.getElementById("js-sexLife").value = sexLife;
+  }
+</script>
+
 </template>
+
