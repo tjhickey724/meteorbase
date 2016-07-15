@@ -1,0 +1,11 @@
+#mainNav{
+	font-family: basic title font;
+	font-size: 15px;
+	background-color: #EEEDF0;
+	text-color: ;
+
+}
+
+#mainNav:hover {
+	background-color:#F79771;
+	}
