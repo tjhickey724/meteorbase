@@ -1,23 +1,23 @@
-const age = $(".js-age").val();
-const gender = document.getElementById("js-gender").value; 
-const other = $(".js-otherGender").val();
-const lifestyle = document.getElementById("js-lifestyle").value;
-const messiness = document.getElementById("js-ocd").value;
-const musicPref = document.getElementById("js-music").value;
-const substance = document.getElementById("js-subFree").value;
-const sleepHabbits = $(".js-sleepHab").val();
-const sleepTime = document.getElementById("js-sleepTime").value;
-const personality = document.getElementById("js-personality").value;
-const pets = document.getElementById("js-pet").value;
-const petType = $(".js-petYes").val();
-const animal = document.getElementById("js-animal").value;
-const color = $(".js-favColor").val();
-const hobby = document.getElementById("js-hobby").value;
-const movie = document.getElementById("js-movie").value;
-const cook = document.getElementById("js-cook").value;
-const sex = document.getElementById("js-sexLife").value;
-   
-   
+
+
+ const gender = $(".js-gender").val();
+ const birth = $(".js-birth").val();
+ const lifestyle = $(".js-lifestyle").val();
+ const ocd = $(".js-ocd").val();
+ const music =$(".js-music").val();
+ const subFree =$(".js-subFree").val();
+ const sleepHab =$(".js-sleepHab").val();
+ const sleepTime =$(".js-sleepTime").val();
+ const personality =$(".js-personality").val();
+ const pet =$(".js-pet").val();
+ const petYes =$(".js-petYes").val();
+ const animal =$(".js-animal").val();
+ const color =$(".js-color").val();
+ const hobby =$(".js-hobby").val();
+ const movie =$(".js-movie	").val();
+ const cook =$(".js-cook").val();
+ const sex =$(".js-sex").val();
+
 
  //console.dir(item);
  //UserInfo.insert(item);
