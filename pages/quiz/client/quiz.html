@@ -4,7 +4,7 @@
 
   <h1> Quiz </h1>
   
-
+  
   <div class="row">
 
   
@@ -230,7 +230,7 @@
 
   <div class="col-sm-12"> 
     <h3> #8 Do you have any sleeping habbits? </h3>
-      <input type="text" class="js-sleepHab" id="sleepHab" placeholder="n/a if none">
+      <input type="text" class="js-sleepHab" placeholder="n/a if none">
   </div>
 
   <br>
@@ -564,12 +564,6 @@
 
   function saveOCD(ocd) {
     document.getElementById("js-ocd").value = ocd;
-  }
-  
-  var input = document.getElementById('sleepHab');
-
-  if(input.value.length == 0)
-    input.value = "N/A";
   }
 
   function saveMusic(music) {
