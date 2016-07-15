@@ -4,19 +4,42 @@
 
 
 		<!-- Here is the standard Bootstrap code for a Navigation bar taken directly from getbootstrap.com/components -->
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+ <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="{{pathFor 'home'}}">Roomie Finder</a>
+            </div>
 
-				<a class="navbar-brand" href="{{pathFor 'home'}}">YOUR APP NAME OR IMAGE</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                        <!--<button type="button" class="btn btn-default navbar-btn" href="{{pathFor 'login'}}">Sign in</button> -->
+                        {{>loginButtons}}
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="{{pathFor 'about'}}">About</a>
+                    </li>
+                    <li>
+                        <a href="{{pathFor 'quiz'}}">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="{{pathFor 'listings'}}">Listings</a>
+                    </li>
+                    <li>
+                        <a href="{{pathFor 'myprofile'}}">My Profile</a>
+                    </li>
+                    </ul>
 
-				<ul class="nav nav-pills">
-				  <li role="presentation"><a href="{{pathFor 'about'}}">About</a></li>
-					<!-- add more li's here for your navigation bar -->
-				</ul>
-
-			  <ul class="nav navbar-nav navbar-right">
-			            {{> loginButtons}} <!-- here -->
-			  </ul>
+            </div>
+            <!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 
