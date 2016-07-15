@@ -10,7 +10,9 @@ iron:router
 sacha:spin
 accounts-password
 jparker:gravatar
-ian:accounts-ui-bootstrap-3
+accounts-ui
+anti:i18n
+stylus
 meteor-base
 mobile-experience
 mongo
