@@ -15,7 +15,7 @@ Template.quiz.events ({
     const zipcode = $(".js-zipcode").val();
     const lifestyle = document.getElementById("js-lifestyle").value;
     const ocd = document.getElementById("js-ocd").value;
-    const musicPref = document.getElementById("js-music").value;
+    const music = document.getElementById("js-music").value;
     const substance = document.getElementById("js-subFree").value;
     const sleepHabbits = $(".js-sleepHab").val();
     const sleepTime = document.getElementById("js-sleepTime").value;
