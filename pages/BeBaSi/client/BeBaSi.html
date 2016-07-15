@@ -12,28 +12,32 @@ Last Name<input class="js-lname" type="text" placeholder="Last Name" style="marg
 </span>
 <br>
 Age <input class="js-age" type="text" placeholder="age" style="margin: 10px;"> -->
+
 <form>
 <fieldset class="form-group">
     <label for="exampleinputname">First Name</label>
-    <input type="text" class="form-control" id="exampleInputname" placeholder="Enter First Name">
+    <input type="text" class="form-control" id="exampleInputname" placeholder="First Name">
   </fieldset>
   <fieldset class="form-group">
     <label for="exampleinputname">Last Name</label>
-    <input type="text" class="form-control" id="exampleInputname" placeholder="Enter Last Name">
+    <input type="text" class="form-control" id="exampleInputname" placeholder="Last Name">
   </fieldset>
+<form action="welcome.php" method="post">
+
   <fieldset class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
     <small class="text-muted">We'll never share your email with anyone else.</small>
   </fieldset>
   <fieldset class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="Message">Age</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Age">
   </fieldset>
     <fieldset class="form-group">
-    <label for="exampleTextarea">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    <label for="exampleTextarea">Message</label>
+    <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
   </fieldset>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <center><button class="submit"><input type="submit" name="submit" value="Find your BaSi"></button></center>
+</form>
 </form>
 </template>
