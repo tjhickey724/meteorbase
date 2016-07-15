@@ -14,28 +14,29 @@ Last Name<input class="js-lname" type="text" placeholder="Last Name" style="marg
 Age <input class="js-age" type="text" placeholder="age" style="margin: 10px;"> -->
 
 <form>
+<form action="welcome.php" method="post">
 <fieldset class="form-group">
-    <label for="exampleinputname">First Name</label>
-    <input type="text" class="form-control" id="exampleInputname" placeholder="First Name">
+    <label for="firstname">First Name</label>
+    <input type="text" class="form-control" id="firstname" placeholder="First Name">
   </fieldset>
   <fieldset class="form-group">
-    <label for="exampleinputname">Last Name</label>
-    <input type="text" class="form-control" id="exampleInputname" placeholder="Last Name">
+    <label for="lastname">Last Name</label>
+    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
   </fieldset>
-<form action="welcome.php" method="post">
+
 
   <fieldset class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
+    <label for="email">Email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
     <small class="text-muted">We'll never share your email with anyone else.</small>
   </fieldset>
   <fieldset class="form-group">
-    <label for="Message">Age</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Age">
+    <label for="age">Age</label>
+    <input type="text" class="form-control" id="age" placeholder="Age">
   </fieldset>
     <fieldset class="form-group">
-    <label for="exampleTextarea">Message</label>
-    <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+    <label for="message">Message</label>
+    <textarea class="form-control" id="message" rows="4"></textarea>
   </fieldset>
   <center><button class="submit"><input type="submit" name="submit" value="Find your BaSi"></button></center>
 </form>
