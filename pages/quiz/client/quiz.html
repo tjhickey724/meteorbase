@@ -1,10 +1,17 @@
 <template name="quiz"> 
 <br>
 <br>
+<<<<<<< HEAD
   <h1> Quiz </h1>
   <a id="quiztop"></a>
 <br>
   <h1 id=QuizH1> Quiz </h1>
+=======
+
+  <h1> Quiz </h1>
+  
+  
+>>>>>>> origin/master
   <div class="row">
 
   
@@ -230,7 +237,28 @@
 
   <div class="col-sm-12"> 
     <h3> #8 Do you have any sleeping habbits? </h3>
+<<<<<<< HEAD
       <input type="text" class="js-sleepHab" placeholder="n/a if none">
+=======
+      <!-- <input type="text" class="js-sleepHab" placeholder="n/a if none"> -->
+      <div class="col-sm-5 col-sm-offset-1">
+        <div class="thumbnail">
+          <input type="radio" id="js-sleepHab" value="yes" name="sleepHab" onclick="saveSleepHab(this.value)"><img src="https://pixabay.com/static/uploads/photo/2013/07/13/10/48/check-157822_960_720.png" alt="yes" style="width:400px;height:300px;">
+          <h3> Yes </h3>
+
+          <h5> If yes, please specify </h5>
+          <input type="text" class="js-sleepHabbitYes">
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <div class="thumbnail">
+          <input type="radio" id="js-sleepHab" value="no" name="sleepHab" onclick="saveSleepHab(this.value)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Red_x.svg/600px-Red_x.svg.png" alt="no" style="width:400px;height:300px;">
+          <h3> No </h3>
+        </div>
+      </div>
+
+>>>>>>> origin/master
   </div>
 
   <br>
@@ -572,6 +600,10 @@
 
   function saveSub(substanceFree) {
     document.getElementById("js-subFree").value = substanceFree;
+  }
+
+  function saveSleepHab(sleepHab) {
+    document.getElementById("js-sleepHab").value = sleepHab;
   }
 
   function saveTime(sleepTime) {
