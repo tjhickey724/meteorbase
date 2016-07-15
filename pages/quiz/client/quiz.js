@@ -30,11 +30,14 @@ Template.quiz.events ({
     const quizResult = { age: age, gender: gender, lifestyle: lifestyle, messiness: messiness, musicPref: musicPref, 
                          substance: substance, sleepHabbits: sleepHabbits, sleepTime: sleepTime, personality: personality,
                          pets: pets, petType: petType, animal: animal, favColor: favColor, hobby: hobby, movie: movie,
-                         cook: cook, sex: sex }
+                         cook: cook, sex: sex ,
+                         userId: Meteor.userId()}
 
     console.log(quizResult);
+    const oldval = QuizResults.findOne({userId:Meteor.userId()})
+    if (oldval) QuizResults.remove(oldval._id);
     QuizResults.insert(quizResult);
-   
+   Router.go("myprofile")
   }
   ,
 
