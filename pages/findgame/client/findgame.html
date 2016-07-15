@@ -2,10 +2,10 @@
 
 
 
-<form>
-<h1> Find Games </h1>
+<form id="name">
+<h1> Find Games! </h1>
 <div>
-<table class="table-bordered">
+<table  id="info" class="table-bordered">
 <thead>
 <tr>
 <th>Game Type</th>
@@ -14,11 +14,13 @@
 <th>Players Needed</th>
 <th>Contact Information</th>
 <th>Start Time</th>
+<th>Join!</th>
 </tr>
 </thead>
 {{#each g in gamelist}}
 {{> showgame g=g}}
 {{/each}}
+
 </table>
  </div>
 </form>
@@ -36,7 +38,7 @@
 <td>{{g.need}}</td>
 <td>{{g.contactinfo}}</td>
 <td>{{g.starttime}}</td>
-<button class="js-join">Join</button>
+<td class="noborder"><button class="js-join btn btn-primary">Join</button></td>
 </tr>
 </tbody>
 

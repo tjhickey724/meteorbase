@@ -12,8 +12,8 @@
   		 console.log(location);
   		 console.log(cont);
        console.log(gametime);
-  		 const gameinfo = {gametype: type, currentplays: current, need: needed, gameloc: location, contactinfo: cont, starttime: gametime}
-  		 console.dir(gameinfo);
+  		 const gameinfo = {gametype: type, currentplays: current, need: needed, gameloc: location, contactinfo: cont, starttime: gametime, currentIds: [Meteor.userId()]}
+       console.dir(gameinfo);
   		  GameList.insert(gameinfo);
   	}
 
