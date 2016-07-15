@@ -107,8 +107,16 @@ Yasmine Calvo
 
 
 
-<p><a class="btn btn-primary btn-lg" href="http://localhost:3000/quiz" role="button" style="margin-left:190px; margin-right:auto;">Jump to Quiz</a></p>
- 
+<a class="btn btn-primary btn-lg" href="{{pathFor 'quiz'}}" role="button" style="margin-left:190px; margin-right:auto;">Jump to Quiz</a>
+
+   <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="{{pathFor 'about'}}">About</a>
+                        </li>
+                        </ul>
 </h3>
 
 
