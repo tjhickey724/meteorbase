@@ -1,9 +1,9 @@
 <template name="layout2">
-	<!-- this is an alternate and simpler navigation bar -->
-	<div class="container">
+    <!-- this is an alternate and simpler navigation bar -->
+    <div class="container">
 
 
-		<!-- Here is the standard Bootstrap code for a Navigation bar taken directly from getbootstrap.com/components -->
+        <!-- Here is the standard Bootstrap code for a Navigation bar taken directly from getbootstrap.com/components -->
  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,14 +16,18 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right" style="line-height:50px;
+                                ">
                         <!--<button type="button" class="btn btn-default navbar-btn" href="{{pathFor 'login'}}">Sign in</button> -->
+                        
                         {{>loginButtons}}
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+
                     <li>
                         <a href="{{pathFor 'about'}}">About</a>
                     </li>
@@ -40,12 +44,12 @@
 
             </div>
             <!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
+          </div><!-- /.container-fluid -->
+        </nav>
 
-		<!-- Here is where the actual content of the page
-		     gets inserted by the router! -->
-		{{> yield}}
+        <!-- Here is where the actual content of the page
+             gets inserted by the router! -->
+        {{> yield}}
 
-	</div>
+    </div>
 </template>

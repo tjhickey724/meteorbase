@@ -12,6 +12,7 @@ Template.quiz.events ({
     const age = $(".js-age").val();
     const gender = document.getElementById("js-gender").value; 
     const other = $(".js-otherGender").val();
+    const zipcode = $(".js-zipcode").val();
     const lifestyle = document.getElementById("js-lifestyle").value;
     const ocd = document.getElementById("js-ocd").value;
     const musicPref = document.getElementById("js-music").value;
@@ -28,10 +29,10 @@ Template.quiz.events ({
     const cook = document.getElementById("js-cook").value;
     const sex = document.getElementById("js-sexLife").value;
 
-    const quizResult = { age: age, gender: gender, lifestyle: lifestyle, musicPref: musicPref, ocd: ocd,
-                         substance: substance, sleepHabbits: sleepHabbits, sleepTime: sleepTime, personality: personality,
-                         pets: pets, petType: petType, animal: animal, color: color, hobby: hobby, movie: movie,
-                         cook: cook, sex: sex, userId: Meteor.userId() } 
+    const quizResult = { age: age, gender: gender, zipcode: zipcode, lifestyle: lifestyle, ocd: ocd, music: music, 
+        substance: substance, sleepHabbits: sleepHabbits, sleepTime: sleepTime, personality: personality,
+        pets: pets, petType: petType, animal: animal, color: color, hobby: hobby, movie: movie,
+        cook: cook, sex: sex, userId: Meteor.userId() } 
 
 
     //console.log(gender);

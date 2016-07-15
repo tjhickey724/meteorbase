@@ -22,12 +22,13 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      	<ul class="nav navbar-nav">
+		      				<li>
+			            	{{> loginButtons}}
+			            	</li>
 							<li><a href="{{pathFor 'about'}}">About</a></li>
 							<li><a href="{{pathFor 'quiz'}}">Quiz</a></li>
 							<!-- add more navigation buttons here -->
-						</ul>
-			    <ul class="nav navbar-nav navbar-right">
-			            {{> loginButtons}} <!-- here -->
+							<!-- here -->
 			    </ul>
 		    </div><!-- /.navbar-collapse -->
 
