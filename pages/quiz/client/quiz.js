@@ -17,7 +17,8 @@ Template.quiz.events ({
     const ocd = document.getElementById("js-ocd").value;
     const music = document.getElementById("js-music").value;
     const substance = document.getElementById("js-subFree").value;
-    const sleepHabbits = $(".js-sleepHab").val();
+    const sleepHabbits = document.getElementById("js-sleepHab").value;
+    const yourHabbit = $(".js-sleepHabbitYes").val();
     const sleepTime = document.getElementById("js-sleepTime").value;
     const personality = document.getElementById("js-personality").value;
     const pets = document.getElementById("js-pet").value;
