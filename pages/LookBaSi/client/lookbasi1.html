@@ -1,4 +1,16 @@
 <template name="lookbasi1"> 
+<style>
+div.quote {
+    background-color:white;
+    color: #049DCD; 
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
+</style>
+<body>
+<div class="quote">
 <h1><center>Find a BaSi</center></h1>
 <p1><center>Basically a paragraph about how good we are bla bla bla...</center></p1>
 <h1>MY KID IS...</h1>
@@ -9,8 +21,53 @@ Age-<input class="js-age" placeholder="Age" type="text" style="margin:10px;">
   <input type="radio" name="gender" value="female"> Female<br>
   <input type="radio" name="gender" value="other"> Other
 </form>
+</div>
+</body>
 <br>
 <br>
-<button class="js-findbasisubmit">Find Your Basi!</button>
+		<style> 
+
+.button {
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  color: #049DCD;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 10;
+  right: 0;
+}
+</style>
+<br> 
+
+
+<center><button class="button"><span>Find Your BaSi!</span></button></center>
 
 </template>
