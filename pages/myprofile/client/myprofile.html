@@ -1,40 +1,45 @@
 <template name="myprofile">
-PROFILE GOES HERE
+
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <body>
 
-
   <table class="table table-bordered">
-  <thead><tr><th>aaa</th></tr></thead>
-	<tbody>
-  		{{#each user in mydata}}
+  <thead><tr><th>My Details</th></tr></thead>
+  <tbody>
+      {{#each user in mydata}}
 
-  		<tr>
-  		<td>Gender:{{user.gender}}</td></tr>
-     		<tr><td>Age:{{user.age}}</td></tr>
-     		<tr><td> Lifestyle:{{user.lifestyle}}</td></tr>
-     		<tr><td>OCD:{{user.ocd}}</td></tr>
-			<tr><td>Favorite Music	:{{user.music}}</td></tr>
-			<tr><td>Substance free:{{user.substance}}</td></tr>
-      <tr><td>Sleep Habbit:{{user.sleepHab}}</td></tr>
-			<tr><td>Sleep time:{{user.sleepTime	}}</td></tr>
-			<tr><td>Personality:{{user.personality}}</td></tr>
-			<tr><td>Pet person:{{user.pet}}</td></tr>
-			<tr><td>Pet:{{user.petYes}}</td></tr>
-			<td>What kind of animal:{{user.animal}}</td>
-			<tr><td>Favorite color:{{user.color}}</td></tr>
-			<tr><td>Hobby:{{user.hobby}}</td></tr>
-			<tr><td>Favorite movie:{{user.movie}}</td></tr>
-			<tr><td>Do you cook:{{user.cook}}</td></tr>
-			<tr><td>Do you hook up?:{{user.sexLife}}</td></tr>
-			
-		
+      <tr>
+      <td>Gender:{{user.gender}}</td></tr>
+        <tr><td>Age:{{user.age}}</td></tr>
+        <tr><td> Lifestyle:{{user.lifestyle}}</td></tr>
+        <tr><td>OCD:{{user.ocd}}</td></tr>
+       <tr><td>Favorite Music :{{user.music}}</td></tr>
+      <tr><td>Substance free:{{user.substance}}</td></tr>
+          <tr><td>Sleep Habbit:{{user.sleepHab}}</td></tr>
+      <tr><td>Sleep time:{{user.sleepTime }}</td></tr>
+      <tr><td>Personality:{{user.personality}}</td></tr>
+      <tr><td>Pet person:{{user.pet}}</td></tr>
+      <tr><td>Pet:{{user.petYes}}</td></tr>
+      <tr><td>What kind of animal:{{user.animal}}</td></tr>
+      <tr><td>Favorite color:{{user.color}}</td></tr>
+      <tr><td>Hobby:{{user.hobby}}</td></tr>
+      <tr><td>Favorite movie:{{user.movie}}</td></tr>
+      <tr><td>Do you cook:{{user.cook}}</td></tr>
+      <tr><td>Do you hook up?:{{user.sexLife}}</td></tr>
+      
+    
   {{/each}}
 
   </tbody>
   </table>
   </body>
-  	<hr>
+    <hr>
 </template>
 
 
