@@ -1,7 +1,8 @@
 <template name="bebasi">
 
 <h1>Be A BaSi</h1> 
-<!-- <br>
+<h3>Amazing Babysitters and Amazing Children!</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Norwood_Children's_Services.jpg" alt="Mountain View" style="width:500px;height:228px;">
 <br>
 First Name<input class="js-fname" type="text" placeholder="First Name" style="margin: 10px;">
 
@@ -11,21 +12,41 @@ Last Name<input class="js-lname" type="text" placeholder="Last Name" style="marg
 
 </span>
 <br>
-Age <input class="js-age" type="text" placeholder="age" style="margin: 10px;"> -->
+Age <input class="js-age" type="text" placeholder="age" style="margin: 10px;">
 <form>
   <fieldset class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-    <small class="text-muted">We'll never share your email with anyone else.</small>
+    <small class="text-muted">Email will be shared with customers for contact.</small>
   </fieldset>
   <fieldset class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </fieldset>
+  
     <fieldset class="form-group">
-    <label for="exampleTextarea">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    <label for="exampleTextarea">Describe Yourself</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3">
+    </textarea>
   </fieldset>
+  <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Age of Child you Wish to Babysit
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">0-3</a></li>
+    <li><a href="#">4-6</a></li>
+    <li><a href="#">7-10</a></li>
+     <li><a href="#">11-15</a></li>
+    <li><a href="#">16+</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
   <button type="submit" class="btn btn-primary">Submit</button>
+</fieldset>
+
 </form>
+
+
 </template>

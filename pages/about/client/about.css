@@ -1,0 +1,13 @@
+p.about { 
+	font-family:avenir; 
+	font-size:x-large;}
+	</style>
+	<style>
+div.quote {
+    background-color:white;
+    color: #049DCD; 
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
