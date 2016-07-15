@@ -1,3 +1,53 @@
 <template name="myprofile">
-PROFILE GOES HERE
+
+<br>
+<br>
+<br>
+<br> 
+
+Gender: 
+    <input type="text" class="js-gender"><br>
+
+Bus number: 
+    <input type="text" class="js-birth"><br>
+
+lifestyle: 
+    <input type="text" class="js-lifestyle"><br>
+
+ocd: 
+    <input type="text" class="js-ocd"><br>
+
+<button class="js-submit-about">Submit</button>
+
+
+
+  <table class="table table-bordered">
+	<tbody>
+  		{{#each user in users}}
+
+  		<tr>
+  		<td>Gender:{{user.gender}}</td>
+     		<td>Age:{{user.birth}}</td>
+     		<td> Lifestyle:{{user.lifestyle}}</td>
+     		<td>OCD:{{user.ocd}}</td>
+			<td>Favorite Music	:{{user.music}}</td>
+			<td>Substance free:{{user.subFree}}</td>
+			<td>Sleep time:{{user.sleepTime	}}</td>
+			<td>Personality:{{user.personality}}</td>
+			<td>Pet person:{{user.pet}}</td>
+			<td>Pet:{{user.petYes}}</td>
+			<td>What kind of animal:{{user.animal}}</td>
+				<td>Favorite color:{{user.color}}</td>
+			<td>Hobby:{{user.hobby}}</td>
+			<td>Favorite movie:{{user.movie}}</td>
+			<td>Do you cook:{{user.cook}}</td>
+			<td>Do you hook up?:{{user.sex}}</td>
+			
+			
+     	</tr>
+  {{/each}}
+
+  </tbody>
+  </table>
+  	<hr>
 </template>
