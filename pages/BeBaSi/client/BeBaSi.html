@@ -3,17 +3,7 @@
 <h1>Be A BaSi</h1> 
 <h3>Amazing Babysitters and Amazing Children!</h3>
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Norwood_Children's_Services.jpg" alt="Mountain View" style="width:500px;height:228px;">
-<br>
-First Name<input class="js-fname" type="text" placeholder="First Name" style="margin: 10px;">
 
-<span style="display:inline-block;margin-left:200px;">
-   Last Name<input class="js-lname" type="text" placeholder="Last Name" style="margin: 10px;">
-</span>
-<br>
-Age <input class="js-age" type="text" placeholder="age" style="margin: 10px;">
-
-
-Age <input class="js-age" type="text" placeholder="age" style="margin: 10px;"> -->
 
 <style>
 div.quote {
@@ -24,17 +14,21 @@ div.quote {
     padding: 20px;
     </style>
     
-
+{{#if currentUser}}
 <form>
 <div class="quote">
 
-<form action="welcome" method="post">
+
   <fieldset class="form-group">
-    <label for="firstname">First Name</label>
+    <label for="lastname">First Name</label>
     <input type="text" class="form-control" id="firstname" placeholder="First Name">
   </fieldset>
-  <fieldset class="form-group">
 
+  <fieldset class="form-group">
+    <label for="lastname">Last Name</label>
+    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+  </fieldset>
+  <fieldset class="form-group">
 
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
@@ -51,7 +45,7 @@ div.quote {
     </textarea>
     </fieldset>
 
-</form>
+
   </div>
   </form>
 
@@ -76,9 +70,9 @@ div.quote {
       <li><a href="#">Separated link</a></li>
     </ul>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
 
 
+<button class="btn btn-primary js-yes">Submit</button>
 
     <label for="lastname">Last Name</label>
     <input type="text" class="form-control" id="lastname" placeholder="Last Name">
@@ -100,7 +94,7 @@ div.quote {
   </fieldset>
   <center><button class="submit"><input type="submit" name="submit" value="Find your BaSi"></button></center>
 
-
+{{/if}}
 
 
 </template>

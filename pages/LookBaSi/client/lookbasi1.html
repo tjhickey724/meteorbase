@@ -2,7 +2,7 @@
 <style>
 div.quote {
     background-color:white;
-    color: #049DCD; 
+    color: #8fd4ea; 
     font-size:medium;
     margin: 20px 0 20px 0;
     padding: 20px;
@@ -10,6 +10,9 @@ div.quote {
 } 
 </style>
 <div class="quote">
+
+
+
   <h1><center>Find a BaSi</center></h1>
   <p1><center>Find a trusted person to care for your child!</center></p1>
   <h1>MY CHILD IS...</h1>
@@ -38,4 +41,14 @@ div.quote {
       <button class="submit"><input type="submit" name="submit" value="Find your BaSi"></button>
   </center>
 </div>
+<ul>
+{{#each basi in BaSis}}
+  {{> basiLine basi = basi}}
+{{/each}}
+
+</ul>
+</template>
+<template name="basiLine">
+ <li>{{basi.firstname}} 
+ {{basi.lastname}}<button class="js-delete">delete</button></li>
 </template>
