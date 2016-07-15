@@ -13,36 +13,36 @@ Template.quiz.events ({
     const gender = $(".js-gender").val();
     const lifestyle = $(".js-lifestyle").val();
     const messiness = $(".js-ocd").val();
-    const musicPrf = $(".js-music").val();
+    const musicPref = $(".js-music").val();
     const substance = $(".js-subFree").val();
     const sleepHabbits = $(".js-sleepHab").val();
     const sleepTime = $(".js-sleepTime").val();
     const personality = $(".js-personality").val();
     const pets = $(".js-pet").val();
-    const typeOfPet = $(".js-petYes").val();
+    const petType = $(".js-petYes").val();
     const animal = $(".js-animal").val();
     const favColor = $("js-color").val();
-    const favHobby = $(".js-hobby").val();
-    const movieGenre = $(".js-movie").val();
+    const hobby = $(".js-hobby").val();
+    const movie = $(".js-movie").val();
     const cook = $(".js-cook").val();
     const sex = $(".js-sexLife").val();
 
-    console.log(age);
-    console.log(gender);
-    console.log(substance);
-    console.log(typeOfPet);
-    console.log(favColor);
-    console.log(movieGenre);
-
-    const quizResult = { age: age, gender: gender, lifestyle: lifestyle, messiness: messiness, musicPrf: musicPrf, 
+    const quizResult = { age: age, gender: gender, lifestyle: lifestyle, messiness: messiness, musicPref: musicPref, 
                          substance: substance, sleepHabbits: sleepHabbits, sleepTime: sleepTime, personality: personality,
-                         pets: pets, typeOfPet: typeOfPet, animal: animal, favColor: favColor, favHobby: favHobby, movieGenre: movieGenre,
+                         pets: pets, petType: petType, animal: animal, favColor: favColor, hobby: hobby, movie: movie,
                          cook: cook, sex: sex }
 
     console.log(quizResult);
     QuizResults.insert(quizResult);
    
   }
+  ,
+
+  "click .js-clear": function(event) {
+    Meteor.call("clearData");
+    console.dir(QuizResults);
+  }
 
 
 })
+
