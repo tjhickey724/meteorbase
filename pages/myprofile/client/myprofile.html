@@ -2,6 +2,8 @@
 <br>
 <br>
 <br>
+
+
 <br>
 <br> 
 
@@ -9,32 +11,32 @@
 
 
   <table class="table table-bordered">
-  <thead><tr><th>My Details</th></tr></thead>
-	<tbody>
-  		{{#each user in mydata}}
+        {{#each user in mydata}}
 
+
+  <thead><tr><th>  {{user.name}}'s Details</th></tr></thead>
+	<tbody>
   		<tr><td>Gender: {{user.gender}}</td></tr>
      	<tr><td>Age: {{user.age}}</td></tr>
+      <tr><td>Zipcode: {{user.zipcode}}</td></tr>
      	<tr><td>Lifestyle: {{user.lifestyle}}</td></tr>
-     	<tr><td>OCD: {{user.ocd}}</td></tr>
-			<tr><td>Favorite Music: {{user.music}}</td></tr>
-			<tr><td>Substance free: {{user.substance}}</td></tr>
-      <tr><td>Sleep Habbit: {{user.sleepHab}}</td></tr>
-			<tr><td>Sleep time: {{user.sleepTime	}}</td></tr>
+     	<tr><td>Cleanliness: {{user.ocd}}</td></tr>
+			<tr><td>Favorite Genre of Music: {{user.music}}</td></tr>
+			<tr><td>Substance Free: {{user.substance}}</td></tr>
+      <tr><td>Sleep Habits: {{user.sleepHab}}</td></tr>
+			<tr><td>Sleeping Responsiveness: {{user.sleepTime	}}</td></tr>
 			<tr><td>Personality: {{user.personality}}</td></tr>
-			<tr><td>Pet person: {{user.pet}}</td></tr>
-			<tr><td>Pet: {{user.petYes}}</td></tr>
-			<tr><td>What kind of animal: {{user.animal}}</td></tr>
-			<tr><td>Favorite color: {{user.color}}</td></tr>
-			<tr><td>Hobby: {{user.hobby}}</td></tr>
-			<tr><td>Favorite movie: {{user.movie}}</td></tr>
-			<tr><td>Do you cook: {{user.cook}}</td></tr>
-			<tr><td>Do you hook up?: {{user.sexLife}}</td></tr>
+			<tr><td>Pets: {{user.pets}} {{user.petYes}}</td></tr>
+			<tr><td>Type of Person: {{user.animal}} Person</td></tr>
+			<tr><td>Favorite Color: {{user.color}}</td></tr>
+			<tr><td>Favorite Hobby: {{user.hobby}} {{user.hobbyOther}}</td></tr>
+			<tr><td>Favorite Movie: {{user.movie}}</td></tr>
+			<tr><td>Cooking: {{user.cook}}</td></tr>
+			<tr><td>Relationship: {{user.sex}}</td></tr>
 			
-		
-  {{/each}}
-
+	
   </tbody>
+    {{/each}}
   </table>
   </body>
   	<hr>

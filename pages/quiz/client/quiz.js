@@ -9,6 +9,7 @@ Template.quiz.helpers(
 Template.quiz.events ({
   "click .js-submit-quiz": function(event) {
     console.log("!")
+    const name = $(".js-name").val();
     const age = $(".js-age").val();
     const gender = document.getElementById("js-gender").value; 
     const other = $(".js-otherGender").val();
@@ -17,7 +18,7 @@ Template.quiz.events ({
     const ocd = document.getElementById("js-ocd").value;
     const music = document.getElementById("js-music").value;
     const substance = document.getElementById("js-subFree").value;
-    const sleepHabbits = $(".js-sleepHab").val();
+    const sleepHab = $(".js-sleepHab").val();
     const sleepTime = document.getElementById("js-sleepTime").value;
     const personality = document.getElementById("js-personality").value;
     const pets = document.getElementById("js-pet").value;
@@ -25,14 +26,15 @@ Template.quiz.events ({
     const animal = document.getElementById("js-animal").value;
     const color = $(".js-favColor").val();
     const hobby = document.getElementById("js-hobby").value;
+    const hobbyOther = $(".js-hobbyOther").val;
     const movie = document.getElementById("js-movie").value; 
     const cook = document.getElementById("js-cook").value;
     const sex = document.getElementById("js-sexLife").value;
 
-    const quizResult = { age: age, gender: gender, zipcode: zipcode, lifestyle: lifestyle, ocd: ocd, music: music, 
-        substance: substance, sleepHabbits: sleepHabbits, sleepTime: sleepTime, personality: personality,
-        pets: pets, petType: petType, animal: animal, color: color, hobby: hobby, movie: movie,
-        cook: cook, sex: sex, userId: Meteor.userId() } 
+    const quizResult = { name, age, gender, zipcode, lifestyle, ocd, music, 
+        substance, sleepHab, sleepTime, personality,
+        pets, petType, animal, color, hobby, hobbyOther, movie,
+        cook, sex, userId: Meteor.userId() } 
 
 
     //console.log(gender);
