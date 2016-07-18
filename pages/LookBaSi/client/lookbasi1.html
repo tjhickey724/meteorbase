@@ -25,8 +25,7 @@ div.quote {
       <li><a href="#">0-3</a></li>
       <li><a href="#">4-6</a></li>
       <li><a href="#">7-10</a></li>
-      <li><a href="#">11-15</a></li>
-      <li><a href="#">16+</a></li>
+      <li><a href="#">11-13</a></li>
     </ul>
   </div>
   <br><br><br>
@@ -49,7 +48,7 @@ div.quote {
 div.quote {
     background-color:white;
     color: #8fd4ea; 
-    align-self: center
+    align: center;
     font-size:medium;
     margin: 20px 0 20px 0;
     padding: 20px;
@@ -58,14 +57,11 @@ div.quote {
 </style>
 <div class="quote">
 
-<table>
-<tr>
+
 <h1>Current BaSis</h1>
 {{#each basi in BaSis}}
   {{> basiLine basi = basi}}
 {{/each}}
-</tr>
-</table>
 
 </div>
 
@@ -73,13 +69,15 @@ div.quote {
 </template>
 <template name="basiLine">
 
- <li><th><h4>Name:</h4>{{basi.firstname}} 
- {{basi.lastname}}</th> <br>
- <th><h4>Age:</h4>{{basi.age}}</th><br>
-  <th><h4>Zip Code:</h4>{{basi.zip}}</th><br>
- <th><h4>Email:</h4>{{basi.email}}</th>
+ <li><h4>Name:</h4>{{basi.firstname}} 
+ {{basi.lastname}}<br>
+ <h4>Age:</h4>{{basi.age}}<br>
+  <h4>Zip Code:</h4>{{basi.zip}}<br>
+ <h4>Email:</h4>{{basi.email}}<br>
+ <h4>Description:</h4>{{basi.describe}}<br>
  <br>
 
 
- <button class="js-delete">delete</button> </li>
+ <button class="btn btn-info js-delete" >delete</button> </li>
+ <br>
 </template>
