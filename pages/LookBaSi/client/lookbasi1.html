@@ -38,22 +38,48 @@ div.quote {
   <br>
 
   <center>
-      <button class="submit"><input type="submit" name="submit" value="Find your BaSi"></button>
+      <input type="submit" name="submit" value="Find a BaSi" class="btn btn-info">
   </center>
 </div>
+
+
 <ul>
+<style>
+
+div.quote {
+    background-color:white;
+    color: #8fd4ea; 
+    align-self: center
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
+</style>
+<div class="quote">
+
+<table>
+<tr>
+<h1>Current BaSis</h1>
 {{#each basi in BaSis}}
   {{> basiLine basi = basi}}
 {{/each}}
+</tr>
+</table>
+
+</div>
 
 </ul>
 </template>
 <template name="basiLine">
- <li><h4>Name:</h4>{{basi.firstname}} 
- {{basi.lastname}} <br>
- <h4>Age:</h4>{{basi.age}}<br>
-<h4>Zip Code:</h4>{{basi.zip}}
- <h4>Email:</h4>{{basi.email}}
+
+ <li><th><h4>Name:</h4>{{basi.firstname}} 
+ {{basi.lastname}}</th> <br>
+ <th><h4>Age:</h4>{{basi.age}}</th><br>
+  <th><h4>Zip Code:</h4>{{basi.zip}}</th><br>
+ <th><h4>Email:</h4>{{basi.email}}</th>
  <br>
- <button class="js-delete">delete</button></li>
+
+
+ <button class="js-delete">delete</button> </li>
 </template>
