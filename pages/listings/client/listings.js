@@ -38,7 +38,7 @@ Template.listings.helpers({
 })
 Template.listings.helpers({
   mydata: function(){
-   if {{user.state}} = Alabama
+   if select = Alabama
 	return listings.find({Alabama});
   },
 
