@@ -32,17 +32,14 @@ Template.listings.helpers({
 	}
 })
 
-Template.listings.helpers({
-  mydata: function(){
-    return listings.find({},{sort:{zipcode:1}});
-  },
+
 
 
 })
 Template.listings.helpers({
   mydata: function(){
-   if select= Alabama
-	return listings.find({Alabama);
+   if {{user.state}} = Alabama
+	return listings.find({Alabama});
   },
 
 
