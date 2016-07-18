@@ -44,16 +44,16 @@ Template.quiz.events ({
                          //userId: Meteor.userId()}
 
     console.log(quizResult);
+
+    //QuizResults.insert(quizResult);
+    UserInfo.insert(quizResult);
+    
     const oldval = QuizResults.findOne({userId:Meteor.userId()})
     if (oldval) QuizResults.remove(oldval._id);
     QuizResults.insert(quizResult);
    Router.go("myprofile")
-  }
-  ,
 
-  "click .js-clear": function(event) {
-    Meteor.call("clearData");
-    console.dir(quizResult);
+   console.dir(QuizResults);
   }
 
 
