@@ -244,8 +244,10 @@
   <br>
 
   <div class="col-sm-12"> 
+  
     <h3> #9. What are Your Sleeping Habits? </h3>
       <input type="text" class="js-sleepHab" placeholder="n/a if none">
+
   </div>
 
   <br>
@@ -593,6 +595,12 @@
 
   function saveOCD(ocd) {
     document.getElementById("js-ocd").value = ocd;
+  }
+  
+  var input = document.getElementById('sleepHab');
+
+  if(input.value.length == 0)
+    input.value = "N/A";
   }
 
   function saveMusic(music) {

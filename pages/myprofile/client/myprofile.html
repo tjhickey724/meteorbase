@@ -2,13 +2,16 @@
 <br>
 <br>
 <br>
-
-
 <br>
 <br> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <body>
-
 
   <table class="table table-bordered">
         {{#each user in mydata}}
@@ -16,28 +19,7 @@
 
   <thead><tr><th>  {{user.name}}'s Details</th></tr></thead>
 	<tbody>
-<<<<<<< HEAD
-  		{{#each user in mydata}}
 
-  		<tr>
-  		<td>Gender:{{user.gender}}</td></tr>
-     		<tr><td>Age:{{user.age}}</td></tr>
-     		<tr><td> Lifestyle:{{user.lifestyle}}</td></tr>
-     		<tr><td>OCD:{{user.ocd}}</td></tr>
-			<tr><td>Favorite Music	:{{user.music}}</td></tr>
-			<tr><td>Substance free:{{user.substance}}</td></tr>
-      <tr><td>Sleep Habbit:{{user.sleepHab}}</td></tr>
-			<tr><td>Sleep time:{{user.sleepTime	}}</td></tr>
-			<tr><td>Personality:{{user.personality}}</td></tr>
-			<tr><td>Pet person:{{user.pet}}</td></tr>
-			<tr><td>Pet:{{user.petYes}}</td></tr>
-			<td>What kind of animal:{{user.animal}}</td>
-			<tr><td>Favorite color:{{user.color}}</td></tr>
-			<tr><td>Hobby:{{user.hobby}}</td></tr>
-			<tr><td>Favorite movie:{{user.movie}}</td></tr>
-			<tr><td>Do you cook:{{user.cook}}</td></tr>
-			<tr><td>Do you hook up?:{{user.sexLife}}</td></tr>
-=======
   		<tr><td>Gender: {{user.gender}}</td></tr>
      	<tr><td>Age: {{user.age}}</td></tr>
       <tr><td>Zipcode: {{user.zipcode}}</td></tr>
@@ -55,14 +37,13 @@
 			<tr><td>Favorite Movie: {{user.movie}}</td></tr>
 			<tr><td>Cooking: {{user.cook}}</td></tr>
 			<tr><td>Relationship: {{user.sex}}</td></tr>
->>>>>>> origin/master
-			
-	
+      
+  
   </tbody>
     {{/each}}
   </table>
   </body>
-  	<hr>
+    <hr>
 </template>
 
 
