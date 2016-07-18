@@ -10,14 +10,15 @@
 				<a class="navbar-brand" href="{{pathFor 'home'}}"><img src="images/logo.png" width="50" height="50" id="navlog"></a>
 
 				<ul class="nav nav-pills">
-				  <li role="presentation">{{> loginButtons}}</li>
-				  <li role="presentation"><a href="{{pathFor 'signin'}}">Sign in</a></li>
+				
+				
 				  <li role="presentation"><a href="{{pathFor 'newuser'}}">New User</a></li>
 				  <li role="presentation"><a href="{{pathFor 'createfind'}}">Create or Find a Game</a></li>
 				  <li role="presentation"><a href="{{pathFor 'makegame'}}">Make a Game</a></li>
 				  <li role="presentation"><a href="{{pathFor 'findgame'}}">Find a Game</a></li>
 				
 				  <li role="presentation"><a href="{{pathFor 'currentgame'}}">Current Game</a></li>
+				  <div id="login"><li role="presentation">{{> loginButtons}}</li></div>
 					<!-- add more li's here for your navigation bar -->
 				</ul>
 
