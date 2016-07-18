@@ -16,7 +16,7 @@
 
   <tbody>
    {{#each user in mydata}}
-      <tr><td>Name:{{user.name}}</td></tr>
+      {{> listing user=user}}
    {{/each}}
 
 
@@ -25,6 +25,13 @@
 
 </body>
     <hr>
+</template>
+
+
+<template name="listing">
+      <tr><td>
+       <a href="viewProfile/{{user._id}}">Profile</a> {{user.name}}
+      </td></tr>
 </template>
 
 

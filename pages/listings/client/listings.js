@@ -31,3 +31,4 @@ Template.listings.helpers({
 	   // return QuizResults.find();
 	}
 })
+
