@@ -4,6 +4,7 @@
 
   <h1> Quiz </h1>
   
+  {{#if currentUser}}
   
   <div class="row">
 
@@ -206,6 +207,13 @@
         <div class="thumbnail">
           <input type="radio" id="js-music" value="foreign" name="music" onclick="saveMusic(this.value)"> <img src="https://pbs.twimg.com/profile_images/378800000636337121/47ab5610c6b92baa4a19ef473e3af7a4.jpeg" alt="foreign" style="width:400px;height:300px;">
           <h3> Foreign </h3>
+        </div>
+    </div>
+
+     <div class="col-sm-5"> 
+        <div class="thumbnail">
+          <input type="radio" id="js-music" value="jazz" name="music" onclick="saveMusic(this.value)"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Louis_Armstrong_restored.jpg" alt="jazz" style="width:400px;height:300px;">
+          <h3> Jazz </h3>
         </div>
     </div>
   </div>
@@ -627,6 +635,12 @@
     document.getElementById("js-sexLife").value = sexLife;
   }
 </script>
+
+{{else}}
+
+  <h1> You have to sign in to take our quiz!! </h1>
+
+  {{/if}}
 
 </template>
 
