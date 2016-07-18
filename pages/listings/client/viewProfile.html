@@ -1,6 +1,33 @@
 <template name="viewProfile">
 <br><br><br><br><br><br><br><br>
 
-  <h1>Profile for {{name}} <br> {{age}} <br> {{gender}} <br> {{lifestyle}} <br> {{ocd}} <br> {{sleephab}}</h1>
+  <h1>Profile for {{name}} </h1>
+  <br>
+ <!--  <br> {{age}} <br> {{gender}} <br> {{zipcode}} <br> {{lifestyle}} <br> {{ocd}} <br> {{music}} <br> {{substance}} <br> {{sleephab}} <br> {{sleepTime}} <br> -->
+
+<table class="table table-bordered">
+
+  <tbody>
+
+      <tr><td>Gender: {{gender}}</td></tr>
+      <tr><td>Age: {{age}}</td></tr>
+      <tr><td>Zipcode: {{zipcode}}</td></tr>
+      <tr><td>Lifestyle: {{lifestyle}}</td></tr>
+      <tr><td>Cleanliness: {{ocd}}</td></tr>
+      <tr><td>Favorite Genre of Music: {{music}}</td></tr>
+      <tr><td>Substance Free: {{substance}}</td></tr>
+      <tr><td>Sleep Habits: {{sleepHab}}</td></tr>
+      <tr><td>Sleeping Responsiveness: {{sleepTime }}</td></tr>
+      <tr><td>Personality: {{personality}}</td></tr>
+      <tr><td>Pets: {{user.pets}} {{petYes}}</td></tr>
+      <tr><td>Type of Person: {{animal}} Person</td></tr>
+      <tr><td>Favorite Color: {{color}}</td></tr>
+      <tr><td>Favorite Hobby: {{hobby}} {{user.hobbyOther}}</td></tr>
+      <tr><td>Favorite Movie: {{movie}}</td></tr>
+      <tr><td>Cooking: {{cook}}</td></tr>
+      <tr><td>Relationship: {{sex}}</td></tr>
+      
+</tbody>
+  </table>
 
 </template>
