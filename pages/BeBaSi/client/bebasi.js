@@ -5,8 +5,13 @@ Template.bebasi.events({
 		//console.log(firstname);
 
 		const lastname = $("#lastname").val();
-		const obj = {firstname, lastname, userId:Meteor.userId()};
+		const age = $("#age").val();
+		const email = $("#email").val();
+		const zip = $("#zip").val();
+		const obj = {firstname, lastname, email, age, zip, userId:Meteor.userId()};
 		console.dir(obj);
 		BaSis.insert(obj);
+
+		
 	}
 })
