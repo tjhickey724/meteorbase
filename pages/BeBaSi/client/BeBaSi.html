@@ -14,7 +14,8 @@ div.quote {
 <center><h1>Be A BaSi</h1> 
 <h3>Amazing Babysitters and Amazing Children!</h3>
 <img src="http://cf.ltkcdn.net/teens/images/std/145700-425x282-babysitters.jpg" alt="Mountain View" style="width:500px;height:300px;"></center>
-</div>
+
+</div> 
 
 <style>
 div.quote {
@@ -68,14 +69,28 @@ div.quote {
 
 
 
-  
-
 <br><br><br>
 <button class="btn btn-primary js-yes">Submit</button>
 
    
+{{else}}
+  <style>
+div.quote {
+    background-color:white;
+    color: #8fd4ea; 
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
+</style> 
+<div class="quote">
+<center>
+  <h2> Please sign in to access page.</h2></center>
+  </div>
+  {{/if}}
 
-{{/if}}
+
 
 
 </template>
