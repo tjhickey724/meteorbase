@@ -1,12 +1,22 @@
 <template name="myprofile">
-PROFILE GOES HERE
 <br>
+<br>
+<br>
+
+
+<br>
+<br> 
+
 <body>
 
 
   <table class="table table-bordered">
-  <thead><tr><th>aaa</th></tr></thead>
+        {{#each user in mydata}}
+
+
+  <thead><tr><th>  {{user.name}}'s Details</th></tr></thead>
 	<tbody>
+<<<<<<< HEAD
   		{{#each user in mydata}}
 
   		<tr>
@@ -28,11 +38,29 @@ PROFILE GOES HERE
 			<tr><td>Favorite movie:{{user.movie}}</td></tr>
 			<tr><td>Do you cook:{{user.cook}}</td></tr>
 			<tr><td>Do you hook up?:{{user.sexLife}}</td></tr>
+=======
+  		<tr><td>Gender: {{user.gender}}</td></tr>
+     	<tr><td>Age: {{user.age}}</td></tr>
+      <tr><td>Zipcode: {{user.zipcode}}</td></tr>
+     	<tr><td>Lifestyle: {{user.lifestyle}}</td></tr>
+     	<tr><td>Cleanliness: {{user.ocd}}</td></tr>
+			<tr><td>Favorite Genre of Music: {{user.music}}</td></tr>
+			<tr><td>Substance Free: {{user.substance}}</td></tr>
+      <tr><td>Sleep Habits: {{user.sleepHab}}</td></tr>
+			<tr><td>Sleeping Responsiveness: {{user.sleepTime	}}</td></tr>
+			<tr><td>Personality: {{user.personality}}</td></tr>
+			<tr><td>Pets: {{user.pets}} {{user.petYes}}</td></tr>
+			<tr><td>Type of Person: {{user.animal}} Person</td></tr>
+			<tr><td>Favorite Color: {{user.color}}</td></tr>
+			<tr><td>Favorite Hobby: {{user.hobby}} {{user.hobbyOther}}</td></tr>
+			<tr><td>Favorite Movie: {{user.movie}}</td></tr>
+			<tr><td>Cooking: {{user.cook}}</td></tr>
+			<tr><td>Relationship: {{user.sex}}</td></tr>
+>>>>>>> origin/master
 			
-		
-  {{/each}}
-
+	
   </tbody>
+    {{/each}}
   </table>
   </body>
   	<hr>
