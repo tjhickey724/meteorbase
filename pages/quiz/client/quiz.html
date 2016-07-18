@@ -57,14 +57,20 @@
 
   <br>
   <br>
+    <div class="col-sm-12">
+    <h3> #4. Enter your City</h3>
+      <input type="text" class="js-city" placeholder="city"> 
+  </div>
+  <br>
+  <br>
 
   <div class="col-sm-12">
-    <h3> #4. Enter your Zipcode</h3>
-      <input type="number" class="js-zipcode" placeholder="Zipcode"> 
+    <h3> #5. Enter your State</h3>
+      <input type="text" class="js-state" placeholder="State"> 
   </div>
   
   <div class="col-sm-12">
-    <h3> #5. Are you a Night Owl or an Early Bird? </h3>
+    <h3> #6. Are you a Night Owl or an Early Bird? </h3>
       
       <br>
       
@@ -87,7 +93,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #6. How Organized are You? </h3>
+    <h3> #7. How Organized are You? </h3>
 
     <br>
 
@@ -135,7 +141,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #7. What Kind of Music Do You Listen To? </h3>
+    <h3> #8. What Kind of Music Do You Listen To? </h3>
 
     <br>
 
@@ -222,7 +228,7 @@
   <br>
 
   <div class="col-sm-12"> 
-    <h3> #8. Are You Substance Free? </h3>
+    <h3> #9. Are You Substance Free? </h3>
 
     <div class="col-sm-5 col-sm-offset-1"> 
         <div class="thumbnail">
@@ -245,7 +251,7 @@
 
   <div class="col-sm-12"> 
   
-    <h3> #9. What are Your Sleeping Habits? </h3>
+    <h3> #10. What are Your Sleeping Habits? </h3>
       <input type="text" class="js-sleepHab" placeholder="n/a if none">
 
   </div>
@@ -254,7 +260,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #10. How Long Does it Take You to Fall Asleep? </h3>
+    <h3> #11. How Long Does it Take You to Fall Asleep? </h3>
 
     <br>
 
@@ -331,7 +337,7 @@
 
 
   <div class="col-sm-12">
-    <h3> #12. Do you have any pets? </h3>
+    <h3> #13. Do you have any pets? </h3>
 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
@@ -356,7 +362,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #13. What kind of a person are you? </h3>
+    <h3> #14. What kind of a person are you? </h3>
     <br>
 
       <div class="col-sm-5 col-sm-offset-1">
@@ -410,7 +416,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #14. Favorite Color? </h3>
+    <h3> #15. Favorite Color? </h3>
       <input type="text" class="js-favColor" placeholder="RAINBOW"> 
   </div>
 
@@ -418,7 +424,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #15. Favorite Hobby? </h3>
+    <h3> #16. Favorite Hobby? </h3>
 
     <br>
 
@@ -467,7 +473,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #16. Movie Genre? </h3>
+    <h3> #17. Movie Genre? </h3>
     <br>
 
     <div class="col-sm-5 col-sm-offset-1">
@@ -521,7 +527,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #17. Do you cook? </h3>
+    <h3> #18. Do you cook? </h3>
     <br>
 
     <div class="col-sm-5 col-sm-offset-1">
@@ -543,7 +549,7 @@
   <br>
 
   <div class="col-sm-12">
-    <h3> #18. Do You Bring Partners Home? </h3>
+    <h3> #19. Do You Bring Partners Home? </h3>
     <br> 
     <div class="col-sm-5 col-sm-offset-1">
       <div class="thumbnail">
@@ -591,6 +597,14 @@
 
   function saveLifestyle(lifestyle) {
     document.getElementById("js-lifestyle").value = lifestyle;
+  }
+
+    function saveLifestyle(city) {
+    document.getElementById("js-city").value = city;
+  }
+
+     function saveLifestyle(state) {
+    document.getElementById("js-state").value = state;
   }
 
   function saveOCD(ocd) {
