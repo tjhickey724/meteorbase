@@ -32,7 +32,7 @@ Template.quiz.events ({
     const cook = document.getElementById("js-cook").value;
     const sex = document.getElementById("js-sexLife").value;
 
-    const quizResult = { name, age, gender, zipcode, lifestyle, ocd, music, 
+    const quizResult = { name, age, gender, city, state, lifestyle, ocd, music, 
         substance, sleepHab, sleepTime, personality,
         pets, petType, animal, color, hobby, hobbyOther, movie,
         cook, sex, userId: Meteor.userId() } 
