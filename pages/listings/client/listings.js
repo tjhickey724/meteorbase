@@ -46,3 +46,5 @@ Template.listings.helpers({
 
 
 })
+if select= Alabama
+return listings.find({Alabama);
