@@ -5,29 +5,34 @@
 
 		<!-- Here is the standard Bootstrap code for a Navigation bar taken directly from getbootstrap.com/components -->
 		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      </button>
+      <a class="navbar-brand" href="{{pathFor 'home'}}"><img src="images/logo.png" width = "50" height="50" id="navlog"></a>
+    </div>
 
-				<a class="navbar-brand" href="{{pathFor 'home'}}"><img src="images/logo.png" width="50" height="50" id="navlog"></a>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="{{pathFor 'newuser'}}">Profile</a></li>
+        <li ><a href="{{pathFor 'createfind'}}">Find or Create a Game</a></li>
+          <li ><a href="{{pathFor 'currentgame'}}"> Current Game</a></li>
+         </ul>
+          </div>
+          </div>
 
-				<ul class="nav nav-pills">
-				
-				
-				  <li role="presentation"><a href="{{pathFor 'newuser'}}">New User</a></li>
-				  <li role="presentation"><a href="{{pathFor 'createfind'}}">Create or Find a Game</a></li>
-				  <li role="presentation"><a href="{{pathFor 'makegame'}}">Make a Game</a></li>
-				  <li role="presentation"><a href="{{pathFor 'findgame'}}">Find a Game</a></li>
-				
-				  <li role="presentation"><a href="{{pathFor 'currentgame'}}">Current Game</a></li>
-				  <div id="login"><li role="presentation">{{> loginButtons}}</li></div>
-					<!-- add more li's here for your navigation bar -->
-				</ul>
 
-		
-		  </div><!-- /.container-fluid -->
-		</nav>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" >
+          <ul class="nav navbar-nav navbar-right" >
+        <li>{{> loginButtons}}</li>
+      </ul>
+ 	</div>
+</nav>
 
-		<!-- Here is where the actual content of the page
-		     gets inserted by the router! -->
+
+
 		{{#if noProfile}}
 		{{> newuser}}
 		{{else}}
