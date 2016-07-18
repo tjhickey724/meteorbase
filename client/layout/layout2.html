@@ -10,6 +10,7 @@
 				<a class="navbar-brand" href="{{pathFor 'home'}}"><img src="images/logo.png" width="50" height="50" id="navlog"></a>
 
 				<ul class="nav nav-pills">
+				  <li role="presentation">{{> loginButtons}}</li>
 				  <li role="presentation"><a href="{{pathFor 'signin'}}">Sign in</a></li>
 				  <li role="presentation"><a href="{{pathFor 'newuser'}}">New User</a></li>
 				  <li role="presentation"><a href="{{pathFor 'createfind'}}">Create or Find a Game</a></li>
@@ -27,7 +28,11 @@
 
 		<!-- Here is where the actual content of the page
 		     gets inserted by the router! -->
+		{{#if noProfile}}
+		{{> newuser}}
+		{{else}}
 		{{> yield}}
+		{{/if}}
 
 	</div>
 </template>
