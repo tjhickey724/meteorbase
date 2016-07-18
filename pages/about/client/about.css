@@ -30,7 +30,7 @@ p {
 	margin-top: 0; 
 	text-align: justify;
 	}
-h3 { 
+#descriptions { 
 	font: italic normal 3em georgia, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
@@ -55,6 +55,9 @@ abbr {
 	border-bottom: none;
 	}
 
+#questions {
+ 
+}
 
 /* specific divs */
 .page-wrapper { 
@@ -81,7 +84,7 @@ header h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	}
-header h2 { 
+/* header h2 { 
 	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
 	margin-top: 58px; 
 	margin-bottom: 40px; 
@@ -93,6 +96,7 @@ header h2 {
 	white-space: nowrap;
 	overflow: hidden;
 	}
+*/ 
 header {
 	padding-top: 20px;
 	height: 87px;
