@@ -7,6 +7,7 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
+<<<<<<< HEAD
 
 /* basic elements */
 html {
@@ -83,6 +84,15 @@ abbr {
 >>>>>>> origin/master
 =======
 >>>>>>> parent of b0a1e7a... I just changed the about and home a bit
+=======
+#Quizlink{
+	border-size: 2px;
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	font-weight: 200px;
+	text-decoration: none;
+}	
+>>>>>>> origin/master
 
 /* specific divs */
 .page-wrapper { 
@@ -90,6 +100,7 @@ abbr {
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
+<<<<<<< HEAD
 	}
 
 <<<<<<< HEAD
@@ -115,6 +126,11 @@ abbr {
 header {
 	padding-top: 20px;
 	height: 87px;
+>>>>>>> origin/master
+=======
+	color: #000;
+ 	text-decoration: none;
+ 	text-decoration-color: black;
 >>>>>>> origin/master
 }
 =======
