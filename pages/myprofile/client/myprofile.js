@@ -19,15 +19,11 @@
  const sex =$(".js-sex").val();
 
 
- //console.dir(item);
- //UserInfo.insert(item);
-
 Template.myprofile.helpers({
 	mydata:function(){
 		console.log("getting mydata");
 	   const val =  QuizResults.findOne({userId:Meteor.userId()});
 	   console.dir(val); 
 	   return [val];
-	   // return QuizResults.find();
 	}
 })

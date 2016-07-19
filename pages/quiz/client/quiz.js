@@ -37,15 +37,8 @@ Template.quiz.events ({
         cook, sex, userId: Meteor.userId() } 
 
 
-    //console.log(gender);
-    //console.log(lifestyle);
-                         //pets: pets, petType: petType, animal: animal, favColor: favColor, hobby: hobby, movie: movie,
-                         //cook: cook, sex: sex ,
-                         //userId: Meteor.userId()}
-
     console.log(quizResult);
 
-    //QuizResults.insert(quizResult);
     UserInfo.insert(quizResult);
     
     const oldval = QuizResults.findOne({userId:Meteor.userId()})
