@@ -36,13 +36,3 @@ Template.listings.helpers({
   mydata: function(){
     return listings.find({},{sort:{zipcode:1}});
   },
-
-
-})
-Template.listings.helpers({
-  mydata: function(){
-    return listings.find({},{sort:{zipcode:1}});
-  },
-
-
-})
