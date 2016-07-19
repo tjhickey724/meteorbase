@@ -13,22 +13,58 @@ div.quote {
 <h1>Contact Us</h1>
 <form>
   <fieldset class="form-group">
-    <label for="exampleInputEmail1">Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="name">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="name">
   
   </fieldset>
   <fieldset class="form-group">
-    <label for="exampleInputPassword1">Email</label>
-    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="email">
     <small class="text-muted">We'll never share your email with anyone else.</small>
   </fieldset>
     <fieldset class="form-group">
-    <label for="exampleTextarea">Message</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    <label for="message">Message</label>
+    <textarea class="form-control" id="message" rows="3"></textarea>
   </fieldset>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary js-yes">Submit</button>
 </form>
 
     
 </div>
+<ul>
+<style>
+
+div.quote {
+    background-color:white;
+    color: #8fd4ea; 
+    align: center;
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
+</style>
+<div class="quote">
+
+
+<h1>Current Feedback</h1>
+{{#each basi in BaSis}}
+  {{> basiline basi = basi}}
+{{/each}}
+
+</div>
+
+</ul>
+
+</template>
+
+<template name="basiline">
+
+ <li><h4>Name:</h4>{{basi.name}}<br>
+ <h4>Date:</h4>{{basi.date}}<br>
+  <h4>Message:</h4>{{basi.message}}<br>
+
+ <br>
+ </li>
+
 </template>
