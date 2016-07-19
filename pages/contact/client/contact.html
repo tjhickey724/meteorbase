@@ -31,40 +31,4 @@ div.quote {
 
     
 </div>
-<ul>
-<style>
-
-div.quote {
-    background-color:white;
-    color: #8fd4ea; 
-    align: center;
-    font-size:medium;
-    margin: 20px 0 20px 0;
-    padding: 20px;
-    font-family:avenir; 
-} 
-</style>
-<div class="quote">
-
-
-<h1>Current Feedback</h1>
-{{#each basi in BaSis}}
-  {{> basiline basi = basi}}
-{{/each}}
-
-</div>
-
-</ul>
-
-</template>
-
-<template name="basiline">
-
- <li><h4>Name:</h4>{{basi.name}}<br>
- <h4>Date:</h4>{{basi.date}}<br>
-  <h4>Message:</h4>{{basi.message}}<br>
-
- <br>
- </li>
-
 </template>
