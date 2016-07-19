@@ -1,7 +1,7 @@
 Template.feedback.helpers({
 
-users:function(){
-	return BaSis.find();
+feedbacks:function(){
+	return Feedback.find();
 }
 
 
@@ -13,15 +13,18 @@ users:function(){
 Template.feedback.events({
 	"click .js-yes": function(event){
 		//console.log("clicked!!");
-		const name = $("#name").val();
+		event.preventDefault();
+		const name = $(".js-name").val();
 		//console.log(firstname);
 
-		const date = $("#date").val();
-		const message = $("#message").val();
-		
-		const obj = {name, date, message, userId:Meteor.userId()};
+		const date = $(".js-date").val();
+		const message = $(".js-message").val();
+		console.log(name);
+		console.log(message);
+		console.log(date);
+		const obj = {name:name, date:date, message:message};
 		console.dir(obj);
-		BaSis.insert(obj);
+		Feedback.insert(obj);
 
 		
 	}
