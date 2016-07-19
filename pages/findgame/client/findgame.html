@@ -4,6 +4,37 @@
 
 <form id="name">
 <h1> Find Games! </h1>
+<select name="dropdown">
+	<option value="Choose Filter">
+		Choose Filter
+	</option>
+	<option value="Baseball">
+		Baseball
+	</option>
+	<option value ="Basketball">
+		Basketball
+	</option>
+	<option value ="Football">
+		Football
+	</option>
+	<option value = "Soccer">
+		Soccer
+	</option>
+	<option value="Spikeball">
+		Spikeball
+	</option>
+	<option value="Tennis">
+		Tennis
+	</option>
+	<option value ="Volleyball">
+		Volleyball
+	</option>
+	<option value ="Other">
+		Other
+	</option>
+	
+	
+</select>
 <div>
 <table  id="info" class="table-bordered">
 <thead>
@@ -12,7 +43,7 @@
 <th>Game Location</th>
 <th>Current Players</th>
 <th>Players Needed</th>
-<th>Contact Information</th>
+<th>Phone Number</th>
 <th>Start Time</th>
 <th>Join!</th>
 </tr>
@@ -36,7 +67,7 @@
 <td>{{g.gameloc}}</td>
 <td>{{g.currentplays}}</td>
 <td>{{g.need}}</td>
-<td><a href="tel:+{{g.contactinfo}}">{{g.contactinfo}}</a></td>
+<td><a href="tel:+1{{g.contactinfo}}">{{g.contactinfo}}</a></td>
 <td>{{g.starttime}}</td>
 <td class="noborder"><button class="js-join btn btn-primary">Join</button></td>
 </tr>
