@@ -6,24 +6,46 @@
 	<form id ="new" action="www.google.com" method="post">
 		<p>
 
-			<label for="username">Username</label>
-			<input id="username" name="username" type="text">
+			<label for="gender">Gender</label>
+			<form>
+  				<input type="radio" name="gender" value="male" checked> Male<br>
+				<input type="radio" name="gender" value="female"> Female<br>
+  				<input type="radio" name="gender" value="other"> Other
+			</form>
 		</p>
 		<p>
-			<label for="email">Email</label>
-			<input id="email" name="email" type="text">
+			<label for="yourSports">Your Sports</label>
+			<form>
+  				<input type="checkbox" name="yourSports" value="Basketball" checked> Basketball<br>
+  				<input type="checkbox" name="yourSports" value="Baseball"> Baseball<br>
+  				<input type="checkbox" name="yourSports" value="Spikeball"> Spikeball<br>
+  				<input type="checkbox" name="yourSports" value="Soccer"> Soccer<br>
+				<input type="checkbox" name="yourSports" value="Football"> Football
+			</form>
+		</p>
+		<p>
+			<label for="athleticLevel">Athletic Level</label>
+			<form>
+				<input type="radio" name="athleticLevel" value="Pro">Pro<br>
+				<input type="radio" name="athleticLevel" value="Intermediate">Intermediate<br>
+				<input type="radio" name="athleticLevel" value="Ametuer">Ametuer
+
+			</form>
+		</p>
+		<p>
+			<label for="Bio">Bio</label>
+			<input id="Bio" name="Bio" type="text">
 			
 		</p>
 		<p>
-			<label for="password">Password</label>
-			<input id="password" name="password" type="password">
-			
+			<label for="contact">Contact</label>
+			<input id="contact" name = "cont" type = "text">
 		</p>
-		<p>
-			<label for="confirm_password">Confirm Password</label>
+		<!-- <p>
+			<label for="confirm_password"></label>
 			<input id="confirm_password" name="confirm_password" type="password">
 			
-		</p>
+		</p> -->
 		<p>
 			<div id="agreement">I Agree to the Terms of Service</div><input id="terms" type="checkbox">
 
