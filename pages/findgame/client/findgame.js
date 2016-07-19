@@ -9,6 +9,16 @@ Template.showgame.events({
 		event.preventDefault();
 		console.log("clicked it");
 		console.dir(this);
+	        const userId = Meteor.userId();
+	        console.dir(this);
+	        if (_.contains(this.g.currentIds,userId)) {
+                  const userId = Meteor.userId();
+                  alert("You are already in this game");
+                  return;
+                }
+
+                GameList.update(this.g._id,{$push:{currentIds:userId}});
+
 		if(this.g.need <= 1)
 		{
 			GameList.remove(this.g._id);

@@ -6,6 +6,7 @@
   		 const location = $(".loc").val();
   		 const cont = $(".contact").val();
        const gametime = $(".time").val();
+	    const owner = Meteor.userId();
     
       if(isNaN(needed) === true || isNaN(current) === true || type == "" || location == "" || gametime == "" || cont == "")
       {
@@ -18,7 +19,7 @@
   		 console.log(location);
   		 console.log(cont);
        console.log(gametime);
-  		 const gameinfo = {gametype: type, currentplays: current, need: needed, gameloc: location, contactinfo: cont, starttime: gametime, currentIds: [Meteor.userId()]}
+  		 const gameinfo = {gametype: type, currentplays: current, need: needed, gameloc: location, contactinfo: cont, starttime: gametime, currentIds: [Meteor.userId()], owner:owner};
        console.dir(gameinfo);
   		  GameList.insert(gameinfo);
   	}
