@@ -16,10 +16,9 @@ html {
 
 .about{ 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 }
-=======
+h1{
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
@@ -30,7 +29,7 @@ html {
 h1{
 	font: 10em;
 }
-=======
+h1{
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
@@ -42,16 +41,12 @@ h1{
 h1{
 	font: 10em;
 }
->>>>>>> parent of b0a1e7a... I just changed the about and home a bit
 p { 
 	margin-top: 0; 
 	text-align: justify;
 	}
-<<<<<<< HEAD
 #descriptions { 
-=======
-h3 { 
->>>>>>> parent of b0a1e7a... I just changed the about and home a bit
+}h3{
 	font: italic normal 3em georgia, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
@@ -76,13 +71,9 @@ abbr {
 	border-bottom: none;
 	}
 
-<<<<<<< HEAD
 #questions {
  
 }
->>>>>>> origin/master
-=======
->>>>>>> parent of b0a1e7a... I just changed the about and home a bit
 
 /* specific divs */
 .page-wrapper { 
@@ -91,10 +82,7 @@ abbr {
 	margin: 0; 
 	position: relative;
 	}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+h1{
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -115,14 +103,11 @@ abbr {
 header {
 	padding-top: 20px;
 	height: 87px;
->>>>>>> origin/master
 }
-=======
-.intro { 
+.intro{ 
 	min-width: 470px;
 	width: 100%;
 	}
->>>>>>> parent of b0a1e7a... I just changed the about and home a bit
 
 header h1 { 
 	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
