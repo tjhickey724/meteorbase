@@ -21,11 +21,6 @@
 
  //console.dir(item);
  //UserInfo.insert(item);
- Template.listings.helpers({
-  mydata: function(){
-    return listings.find({},{sort:{zipcode:1}});
-}
-  })
 
 Template.listings.helpers({
 	mydata:function(){
@@ -36,6 +31,4 @@ Template.listings.helpers({
 	   // return QuizResults.find();
 	}
 })
-
-
 

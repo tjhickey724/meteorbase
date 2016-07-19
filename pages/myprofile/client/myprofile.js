@@ -1,5 +1,4 @@
  const name = $(".js-name").val();
- const email = $(".js-email").val();
  const gender = $(".js-gender").val();
  const birth = $(".js-birth").val();
  const lifestyle = $(".js-lifestyle").val();
@@ -18,6 +17,7 @@
  const movie =$(".js-movie	").val();
  const cook =$(".js-cook").val();
  const sex =$(".js-sex").val();
+
 
  //console.dir(item);
  //UserInfo.insert(item);
