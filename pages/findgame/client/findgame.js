@@ -1,6 +1,6 @@
 Template.findgame.helpers({
 	gamelist: function(){
-		return GameList.find();
+		return GameList.find({},{sort:{gametype:1}});
 	}
 })
 
