@@ -10,6 +10,7 @@ Template.quiz.events ({
   "click .js-submit-quiz": function(event) {
     console.log("!")
     const name = $(".js-name").val();
+    const email = $(".js-email").val();
     const age = $(".js-age").val();
     const gender = document.getElementById("js-gender").value; 
     const other = $(".js-otherGender").val();
