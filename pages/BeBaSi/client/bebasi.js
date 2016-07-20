@@ -8,8 +8,10 @@ Template.bebasi.events({
 		const age = $("#age").val();
 		const email = $("#email").val();
 		const zip = $("#zip").val();
+		const phone = $("#phone").val();
 		const describe = $("#describe").val();
-		const obj = {firstname, lastname, email, age, zip, describe, userId:Meteor.userId()};
+		const obj = {firstname, lastname, email, phone, age, zip, describe, userId:Meteor.userId()};
+		console.log(phone);
 		console.dir(obj);
 		BaSis.insert(obj);
 		alert("You've successfully submitted your information! ");
