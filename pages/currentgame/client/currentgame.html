@@ -1,5 +1,29 @@
 <template name= "currentgame">
 
+<form id="name">
+<h1> Current Game </h1>
+
+<table id="info" class="table-bordered">
+<thead>
+<th> Sport </th>
+<th> Game Location </th>
+<th> Current Players </th>
+<th> Players needed </th>
+<th> Contact info </th>
+<th> Start Time </th>
+<th> Leave </th>
+</thead>
+<tbody>
+<td> {{g.gametype}}   </td>
+<td>  {{g.gameloc}}  </td>
+<td>   {{g.currentplays}} </td>
+<td>   {{g.need}} </td>
+<td>   {{g.contactinfo}} </td>
+<td>   {{g.starttime}} </td>
+</tbody>
+</table>
+
+</form>
 
 <body>
   {{> map}}
