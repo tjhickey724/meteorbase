@@ -1,6 +1,6 @@
 	function storevariables()
   	{  
-  		const type = $(".gametype").val();
+  		const type = $(".gametype").val().toLowerCase();
   		 const current = parseInt($(".currentplayers").val());
   		 const needed = parseInt($(".playersneeded").val());
   		 const location = $(".loc").val();
@@ -29,7 +29,7 @@ Template.makegame.events({
     event.preventDefault();
       storevariables();
       Router.go('findgame');
-  },
+  }
 
 
 })
