@@ -1,0 +1,43 @@
+<template name = "listcurrentgames">
+
+<form id="name">
+<h1> Current Games </h1>
+
+<table id="info" class="table-bordered">
+<thead>
+<th> Sport </th>
+<th> Game Location </th>
+<th> Current Players </th>
+<th> Players needed </th>
+<th> Contact info </th>
+<th> Start Time </th>
+<th> Leave </th>
+</thead>
+{{#each game in mygames}}
+{{> currentgames game=game}}
+{{/each}}
+
+</table>
+</form>
+
+
+</template>
+
+
+
+
+<template name="currentgames">
+<tbody>
+<tr>
+<td> {{game.gametype}} </td>
+<td> {{game.gameloc}} </td>
+<td> {{game.currentplays}} </td>
+<td> {{game.need}} </td>
+<td><a href="tel:+1{{game.contactinfo}}"> {{game.contactinfo}} </a></td>
+<td> {{game.starttime}} </td>
+ <td class="noborder"><button class="js-leave btn btn-primary">Leave</button></td>
+</tr>
+</tbody>
+
+
+</template>
