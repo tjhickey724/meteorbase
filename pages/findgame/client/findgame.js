@@ -3,10 +3,14 @@ Session.set("gametype","Choose Filter");
 Template.findgame.helpers({
 	gamelist: function(){
 		const gametype = Session.get("gametype").toLowerCase();
+		const gametypes = ["baseball","soccer","spikeball","football","volleyball","tennis","basketball"]
 		if (gametype=="choose filter"){
 			return GameList.find({},{sort:{gametype:1}});
 		}
-		
+		else if(gametype == "other")
+		{
+			return  GameList.find({gametype:{$nin:gametypes}})
+		}
 		const games = 
 		GameList.find({gametype:gametype},{sort:{gametype:1}});
 		if (games.count()==0) {
