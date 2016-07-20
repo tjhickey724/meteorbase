@@ -12,7 +12,7 @@ Template.bebasi.events({
 		const obj = {firstname, lastname, email, age, zip, describe, userId:Meteor.userId()};
 		console.dir(obj);
 		BaSis.insert(obj);
-
+		alert("You've successfully submitted your information! ");
 		
 	}
 })
