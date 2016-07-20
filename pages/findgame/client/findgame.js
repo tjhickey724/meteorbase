@@ -48,6 +48,9 @@ Template.showgame.events({
 		GameList.update(this.g._id,{$inc:{currentplays:1}})
 		GameList.update(this.g._id,{$inc:{need:-1}})
 		}
+		
+		Router.go('listcurrentgames', {_id: g._id}); 
+
 	}
 })
 function storedvariables1()
