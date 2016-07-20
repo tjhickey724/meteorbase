@@ -1,5 +1,15 @@
 Markers = new Mongo.Collection('markers');
 
+Template.findgame.helpers({
+  gamelist: function(){
+    return GameList.find({},{sort:{gametype:1}});
+  }
+})
+
+
+
+
+
 if (Meteor.isClient) {
   Template.map.onCreated(function() {
     GoogleMaps.ready('map', function(map) {
@@ -52,3 +62,4 @@ if (Meteor.isClient) {
     }
   });
 }
+
