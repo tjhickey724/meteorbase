@@ -1,0 +1,68 @@
+<template name="lookbasi1"> 
+<style>
+div.quote {
+    background-color:white;
+    color: #8fd4ea; 
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
+</style>
+<div class="quote">
+
+
+
+  <h1><center>Find a BaSi</center></h1>
+  <p1><center>Find a trusted person to care for your child!</center></p1>
+  
+  <br>
+  <br><center>
+  ZipCode to search: <input type="text" class="js-zipcode"></center><br>
+
+  <center>
+      <input type="submit" name="submit" value="Find a BaSi" class="btn btn-info js-submit">
+  </center>
+</div>
+
+
+<ul>
+<style>
+
+div.quote {
+    background-color:white;
+    color: #8fd4ea; 
+    align: center;
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
+</style>
+<div class="quote">
+
+
+<h1>Current BaSis</h1>
+{{#each basi in BaSis}}
+  {{> basiLine basi = basi}}
+{{/each}}
+
+</div>
+
+</ul>
+</template>
+<template name="basiLine">
+
+ <li><h4>Name:</h4>{{basi.firstname}} 
+ {{basi.lastname}}<br>
+ <h4>Age:</h4>{{basi.age}}<br>
+  <h4>Zip Code:</h4>{{basi.zip}}<br>
+ <h4>Email:</h4>{{basi.email}}<br>
+ <h4>Phone:</h4>{{basi.phone}}<br>
+ <h4>Description:</h4>{{basi.describe}}<br>
+ <br>
+
+
+ <button class="btn btn-info js-delete" >delete</button> </li>
+ <br>
+</template>

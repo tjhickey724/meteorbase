@@ -1,9 +1,84 @@
 <template name="home">
 
-	<div class="jumbotron">
-  	<h1> NAME OF YOUR APP</h1>
-		<p> SLOGAN/BRAND PROMISE OF YOUR APP </p>
-	</div>
+	<style>
 
-<p>Other info on your home page! Maybe using the Grid layout</p>
+  .jumbotron {
+    background-color:white !important;
+    color: transparent; !important; 
+}
+</style>
+<div class="jumbotron">
+
+<br>
+<br>
+
+
+  	<h1>BaSi</h1>
+		
+
+  <center><img src="images/logoedit-home copy.png" alt="logo" style="width:540px;height:380px" ></center>
+
+
+	</div> 
+		<style> 
+.button {
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  color: #8fd4ea;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 10;
+  right: 0;
+}
+</style>
+<br> 
+
+
+<center><a href="bebasi"><button class="button"><span>Be a Basi</span></button></a></center>
+<center><a href="lookbasi1"><button class="button"><span>Find a BaSi</span></button></a></center>
+<br>
+<style>
+div.quote {
+    background-color:white;
+    color: #8fd4ea; 
+    font-size:medium;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    font-family:avenir; 
+} 
+</style>
+<body>
+<div class="quote">
+<h2>A smile is the light in your window that tells others that there is a caring, sharing person inside.</h2>
+<p><h2>~Denis Waitley</h2></p>
+</div>
+</body>
 </template>
