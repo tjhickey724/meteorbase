@@ -1,0 +1,43 @@
+<template name="layout2">
+	<!-- this is an alternate and simpler navigation bar -->
+	<div class="container">
+
+
+		<!-- Here is the standard Bootstrap code for a Navigation bar taken directly from getbootstrap.com/components -->
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      </button>
+      <a class="navbar-brand" href="{{pathFor 'home'}}"><img src="images/logo.png" width = "50" height="50" id="navlog"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="{{pathFor 'newuser'}}">Profile</a></li>
+        <li ><a href="{{pathFor 'createfind'}}">Find or Create a Game</a></li>
+          <li ><a href="{{pathFor 'listcurrentgames'}}"> Your Current Games</a></li>
+         </ul>
+          </div>
+          </div>
+
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" >
+          <ul class="nav navbar-nav navbar-right" >
+        <li>{{> loginButtons}}</li>
+      </ul>
+ 	</div>
+</nav>
+
+
+
+		{{#if noProfile}}
+		{{> newuser}}
+		{{else}}
+		{{> yield}}
+		{{/if}}
+
+	</div>
+</template>

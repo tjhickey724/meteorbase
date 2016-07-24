@@ -1,0 +1,86 @@
+<template name = "newuser">
+
+<div>
+		<img src="images/logo.png" width = "210" height = "210" align = "middle"/>
+</div>
+	<form id ="new" action="www.google.com" method="post">
+		<p>
+			<label for="username">Username</label>
+			<input id="username" name="username" type="username">
+			
+		</p>
+		<p>
+
+			<label for="gender">Gender</label>
+			<form>
+  				Male <input type="radio" name="gender" value="male" checked> <br>
+				Female<input type="radio" name="gender" value="female"> <br>
+  				Other <input type="radio" name="gender" value="other">
+			</form>
+		</p>
+		<p>
+			<label for="yourSports">Your Sports</label>
+			<form>
+  				 Basketball <input type="checkbox" name="yourSports" value="Basketball" checked><br>
+  				Baseball <input type="checkbox" name="yourSports" value="Baseball"><br>
+  				Spikeball<input type="checkbox" name="yourSports" value="Spikeball"><br>
+  				Soccer <input type="checkbox" name="yourSports" value="Soccer"><br>
+				Football <input type="checkbox" name="yourSports" value="Football"> 
+			</form>
+		</p>
+		<p>
+			<label for="athleticLevel">Athletic Level</label>
+			<form>
+				<input type="radio" name="athleticLevel" value="Pro">Pro<br>
+				<input type="radio" name="athleticLevel" value="Intermediate">Intermediate<br>
+				<input type="radio" name="athleticLevel" value="Ametuer">Ametuer
+
+			</form>
+		</p>
+		<p>
+			<label for="Bio">Bio</label>
+			<input id="Bio" name="Bio" type="Bio">
+			
+		</p>
+<p>
+			<label for="phone">Phone Number</label>
+			<input id="phone" name="phone" type="phone">
+			
+		</p>
+		<!-- <p>
+			<label for="confirm_password"></label>
+			<input id="confirm_password" name="confirm_password" type="password">
+			
+		</p> -->
+		<p>
+			<div id="agreement">I Agree to the Terms of Service</div><input id="terms" type="checkbox">
+
+		</p>
+		<p>
+			<input type="submit" {{disabled}} class="js-submit-newuser" value = "SUBMIT">
+		</p>
+	
+	</form>
+
+	<div>
+			PickApp
+
+	</div>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80990981-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	
+
+</template>

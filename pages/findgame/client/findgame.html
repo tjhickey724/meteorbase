@@ -1,0 +1,90 @@
+<template name="findgame">
+
+
+
+<form id="name">
+<h1> Find Games! </h1>
+ 
+<br>
+<br>
+<div>
+<table  id="info" class="table-bordered">
+<thead>
+<tr>
+<th>Game Type <select name="dropdown" class ="sports">
+	<option value="Choose Filter">
+		Choose Filter
+	</option>
+	<option value="Baseball" class="baseball">
+		Baseball
+	</option>
+	<option value ="Basketball" class="basketball">
+		Basketball
+	</option>
+	<option value ="Football" class="football">
+		Football
+	</option>
+	<option value = "Soccer" class="soccer">
+		Soccer
+	</option>
+	<option value="Spikeball" class="spikeball">
+		Spikeball
+	</option>
+	<option value="Tennis" class="tennis">
+		Tennis
+	</option>
+	<option value ="Volleyball" class="volleyball">
+		Volleyball
+	</option>
+	<option value ="Other" class="other">
+		Other
+	</option>	
+	
+</select></th>
+<th>Game Location</th>
+<th>Current Players</th>
+<th>Players Needed</th>
+<th>Phone Number</th>
+<th>Start Time</th>
+<th>Join!</th>
+</tr>
+</thead>
+{{#each g in gamelist}}
+{{> showgame g=g}}
+{{/each}}
+
+</table>
+ </div>
+</form>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80990981-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</template>
+
+
+
+<template name="showgame">
+<tbody>
+<tr>
+<td>{{g.gametype}}</td>
+<td>{{g.gameloc}}</td>
+<td>{{g.currentplays}}</td>
+<td>{{g.need}}</td>
+<td><a href="tel:+1{{g.contactinfo}}">{{g.contactinfo}}</a></td>
+<td>{{g.starttime}}</td>
+<td class="noborder"><button class="js-join btn btn-primary">Join</button></td>
+</tr>
+</tbody>
+
+
+</template>
+
