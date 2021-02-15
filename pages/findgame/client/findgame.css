@@ -1,0 +1,35 @@
+#dropdown{
+position: right;
+text-align: right;
+align-items: right;
+}
+
+
+
+form#name{
+  background: #fff;
+  padding: 4em 4em 2em;
+  margin: 100px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 5px;
+  margin-top: 50px;
+  width:75%;
+}
+
+table#info{
+position: center;
+text-align: center;
+align:center;
+align-items: center;
+display:inline-block;
+font-size: 20px;
+
+}
+
+.noborder{
+
+border:transparent;
+padding: 20px;
+
+}
+
